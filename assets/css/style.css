@@ -1,22 +1,29 @@
 body {
-    font-family: 'Open Sans', Arial, sans-serif; /* More legible font */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ffffff; /* Pure white text for better contrast */
+    color: #f8f8f8; /* Light text color */
     background-image: url('/assets/banner.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Ensures the background doesn't scroll with the content */
-    background-color: #000; /* Solid color fallback for better contrast */
+    background-attachment: fixed;
+    line-height: 1.6; /* Adjust line spacing for better readability */
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+    padding: 20px; /* More padding to distance the text from the edges */
+    margin: 20px; /* Margin to provide space from the header and the screen edges */
+    border-radius: 5px; /* Rounds the corners of the main background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle box shadow for depth */
 }
 
 header nav ul {
     list-style: none;
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for the nav */
+    background-color: rgba(51, 51, 51, 0.8);
     margin: 0;
     padding: 0;
-    /* Removing text shadow to test clarity without it */
 }
 
 header nav ul li {
@@ -25,40 +32,42 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ffffff; /* Pure white text for better contrast */
+    color: white;
     text-decoration: none;
-    font-size: 1.1em; /* Slightly larger font size for navigation links */
-    /* Removing text shadow to test clarity without it */
+    text-shadow: 1px 1px 3px #000; /* Text shadow for better readability */
 }
 
 .research-section {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
-    color: #e7e7e7; /* Slightly off-white color reduces glare */
+    background-color: rgba(0, 0, 0, 0.6);
     margin: 20px;
-    padding: 15px; /* More padding for better text separation */
-    border-radius: 5px; /* Rounds the corners of the section background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for more depth */
-    font-size: 1.05em; /* Slightly larger font size for body text */
-    line-height: 1.6; /* Improved line height for better readability */
-    /* Removing text shadow to test clarity without it */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Additional styles for headings to improve readability */
-h1, h2, h3 {
-    color: #ffffff; /* Pure white text for headings */
-    text-shadow: 2px 2px 4px #000; /* Stronger text shadow for heading elements */
+/* Additional styles for headings and links for better readability */
+h1, h2, h3, p {
+    text-shadow: 2px 2px 4px #000; /* Stronger text shadow for headings and paragraphs */
 }
 
-/* Style for links to make them stand out */
 a {
-    color: #1e90ff; /* Bright link color for contrast */
-    text-decoration: underline; /* Underline to make links obvious */
+    color: #FFD700; /* Gold color for links for higher contrast and visibility */
+    text-decoration: underline; /* Underlined links to differentiate from other text */
 }
 
-/* Adding a style for paragraphs to ensure good readability */
+/* Adjusting the font sizes for better hierarchy and readability */
+h1 {
+    font-size: 2.5rem; /* Larger size for main heading */
+}
+
+h2 {
+    font-size: 2rem; /* Larger size for secondary headings */
+}
+
+h3 {
+    font-size: 1.75rem; /* Larger size for tertiary headings */
+}
+
 p {
-    margin-bottom: 1em; /* Space after paragraphs */
+    font-size: 1.25rem; /* Slightly larger paragraph font size */
 }
-
-/* Ensure the font is loaded from Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
