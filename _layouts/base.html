@@ -5,41 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
-        .background-image {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0; /* Ensure it covers the top */
-    bottom: 0; /* Ensure it covers the bottom */
-    z-index: 1;
-    display: block;
-    background-image: url('assets/banner.webp');
-    width: 100%;
-    height: 100%;
-    background-size: cover; /* Cover might work well with no-repeat */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-}
-
-        .content {
-            position: relative;
-            z-index: 2;
-            background: rgba(0, 0, 0, 0.5); /* Adjust background opacity */
-            color: #f1f1f1; /* Text color */
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
-    <div class="background-image"></div>
+    <!-- The .background-image div can be removed if the background is set in the CSS file -->
     <div class="content">
         <header>
             <nav>
@@ -57,4 +25,3 @@
     </div>
 </body>
 </html>
-
