@@ -27,7 +27,7 @@ With a passion for technology and a relentless pursuit of knowledge, I've dedica
 
 ## Contact
 
-For collaborations, inquiries, or to share insights, feel free to [contact me](mailto:richard@example.com).
+For collaborations, inquiries, or to share insights, feel free to [contact me](mailto:jeremy@richards.ai).
 
 ---
 
