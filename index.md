@@ -1,6 +1,7 @@
 ---
 layout: base
 title: Home
+theme: jekyll-theme-hacker
 ---
 
 # Welcome to My Research Page
