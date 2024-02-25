@@ -2,5 +2,4 @@ title: Dyngnosis Research Page
 description: A collection of research, experiment results, and tools I can share.
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-hacker
 layout: base
