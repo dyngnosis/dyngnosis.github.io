@@ -3,6 +3,32 @@ layout: base
 title: Home
 ---
 
-# Welcome to My Research Page
+# Richard's Research Hub
 
-Here you will find my research on various topics.
+Welcome to the central hub for all of my research. With over 20 years of experience in the fields of Machine Learning, Reverse Engineering, and Vulnerability Research, this space is dedicated to sharing insights, findings, and contributions to these areas. Explore the links below to delve into each category.
+
+## Research Categories
+
+### [Machine Learning](https://research.richards.ai/machine-learning.html)
+
+Dive into my work on Machine Learning, where I explore algorithms, data analysis, and the development of models that can learn and make predictions or decisions without being explicitly programmed to perform tasks. 
+
+### [Reverse Engineering](https://research.richards.ai/reverse-engineering-malware.html)
+
+Discover the world of Reverse Engineering, where I dissect software and systems to understand their functioning, identify vulnerabilities, and improve security. 
+
+### [Vulnerability Research](https://research.richards.ai/vulnerability-research.html)
+
+Explore my findings in Vulnerability Research, focusing on identifying, analyzing, and addressing vulnerabilities in software and systems to enhance security measures and protect against threats.
+
+## About Me
+
+With a passion for technology and a relentless pursuit of knowledge, I've dedicated the past two decades to researching and advancing the fields of Machine Learning, Reverse Engineering, and Vulnerability Research. My work aims to push the boundaries of what's possible, contributing to safer, smarter, and more efficient systems.
+
+## Contact
+
+For collaborations, inquiries, or to share insights, feel free to [contact me](mailto:richard@example.com).
+
+---
+
+Thank you for visiting my research hub. Let's explore the possibilities and make impactful advancements together.
