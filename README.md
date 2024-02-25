@@ -1,3 +1,3 @@
 # dyngnosis.github.io
 
-TEST
+TESTING
