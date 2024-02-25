@@ -1,13 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif; /* More legible font */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #f8f8f8; /* Bright text for dark backgrounds */
+    color: #ffffff; /* Pure white text for better contrast */
     background-image: url('/assets/banner.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Ensures the background doesn't scroll with the content */
+    background-color: #000; /* Solid color fallback for better contrast */
 }
 
 header nav ul {
@@ -15,7 +16,7 @@ header nav ul {
     background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for the nav */
     margin: 0;
     padding: 0;
-    text-shadow: 1px 1px 3px #000; /* Text shadow for better readability */
+    /* Removing text shadow to test clarity without it */
 }
 
 header nav ul li {
@@ -24,16 +25,40 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #ffffff; /* Pure white text for better contrast */
     text-decoration: none;
-    text-shadow: 1px 1px 3px #000; /* Text shadow for better readability */
+    font-size: 1.1em; /* Slightly larger font size for navigation links */
+    /* Removing text shadow to test clarity without it */
 }
 
 .research-section {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for the section */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+    color: #e7e7e7; /* Slightly off-white color reduces glare */
     margin: 20px;
-    padding: 10px;
-    border-radius: 5px; /* Optional: Rounds the corners of the section background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle box shadow for depth */
-    text-shadow: 1px 1px 3px #000; /* Text shadow for better readability */
+    padding: 15px; /* More padding for better text separation */
+    border-radius: 5px; /* Rounds the corners of the section background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for more depth */
+    font-size: 1.05em; /* Slightly larger font size for body text */
+    line-height: 1.6; /* Improved line height for better readability */
+    /* Removing text shadow to test clarity without it */
 }
+
+/* Additional styles for headings to improve readability */
+h1, h2, h3 {
+    color: #ffffff; /* Pure white text for headings */
+    text-shadow: 2px 2px 4px #000; /* Stronger text shadow for heading elements */
+}
+
+/* Style for links to make them stand out */
+a {
+    color: #1e90ff; /* Bright link color for contrast */
+    text-decoration: underline; /* Underline to make links obvious */
+}
+
+/* Adding a style for paragraphs to ensure good readability */
+p {
+    margin-bottom: 1em; /* Space after paragraphs */
+}
+
+/* Ensure the font is loaded from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
