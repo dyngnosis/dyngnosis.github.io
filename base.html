@@ -5,21 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        /* Hamburger Menu Icon */
+        .menu-icon {
+            cursor: pointer;
+            display: block;
+            width: 30px;
+            height: 25px;
+            position: relative;
+            top: 15px;
+            right: -15px;
+        }
+        .menu-icon .bar {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: black;
+            border-radius: 3px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+        }
+        .menu-icon .bar:nth-child(2) { top: 8px; }
+        .menu-icon .bar:nth-child(3) { top: 16px; }
+
+        /* Menu CSS */
+        nav ul {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        /* Menu visible */
+        .menu-visible nav ul {
+            display: block;
+            position: absolute;
+            background-color: #f0f0f0;
+            width: 100%;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/machine-learning.html">Machine Learning</a></li>
                 <li><a href="/reverse-engineering-malware.html">Reverse Engineering Malware</a></li>
-                <li><a href="/vulnerability-research.html">Vulnerability Research</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        {{ content }}
-    </main>
-</body>
-</html>
-
+                <li><a href="/vulnerability-research.html">V
