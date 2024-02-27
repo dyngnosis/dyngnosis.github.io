@@ -29,8 +29,6 @@ We can see that an Analyst interacts with the Plugin Server via a REST API.  The
 # Plugins:
 There are three Ghidra plugins each with their own configured shortcut keys.
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTThQOziY6XoQlDy6MIgZVas3xBpw_PMa0zkgsAuqDQXxSvDMCUXV9smgnHY9qUwQ/embed?start=false&loop=true&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
 
 ## llm.py (CTRL-ALT-L)
 This script calls your local LLM.  It requests a new function name and function description.  It renames the function and updates the somments with the description.  Your cursor can be anywhere inside the decompiled function that you're interested in.
