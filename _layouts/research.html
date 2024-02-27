@@ -11,11 +11,11 @@ layout: base
                 const existingClasses = block.className.split(' ')
                                          .filter(c => c.trim() !== '' && c.trim() !== 'language-py' && c.trim() !== 'language-python');
                 // Set className to 'language-none', adding it to existing classes if necessary
-                block.className = existingClasses.join(' ').trim() + (existingClasses.length > 0 ? ' ' : '') + 'language-none';
+                block.className = existingClasses.join(' ').trim() + (existingClasses.length > 0 ? ' ' : '') + 'language-python';
             });
             Prism.highlightAll(); // Apply Prism highlighting
         });
-        
+
     </script>
     <h1>{{ page.title }}</h1>
     {{ content }}
