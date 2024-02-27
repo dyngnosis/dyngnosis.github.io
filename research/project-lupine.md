@@ -23,8 +23,7 @@ Below is a rough architecture.  The graph was created in matplotlib and networkx
 
 We can see that an Analyst interacts with the Plugin Server via a REST API.  The plugin sends the binary hash, function offset, and decompiled code to the plugin server.  The plugin server routes the request to either the local LLM or the community server for analysis.  The plugin server records the code and response for training.  The analyst is able to submit suggests/feedback on output within the IDE.  Plugin server can use different LLMs to resolve requests based on input length or API key.
 
-![alt text](https://github.com/dyngnosis/lupine/blob/main/utils/static/flowchart.png?raw=true)
-
+<img src="https://github.com/dyngnosis/lupine/blob/main/utils/static/flowchart.png?raw=true" style="width:100%;">
 
 # Plugins:
 There are three Ghidra plugins each with their own configured shortcut keys.
