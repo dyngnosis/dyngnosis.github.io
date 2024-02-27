@@ -1,13 +1,17 @@
----
-layout: research
-title: Overcoming VirusTotal's Shadow DOM with Selenium and PyShadow
----
+# Overcoming VirusTotal's Shadow DOM with Selenium and PyShadow
 For cybersecurity practitioners, VirusTotal (VT) is a critical tool for the analysis and scanning of files and URLs. However, automating interactions with VT can be challenging due to its advanced anti-automation measures, including the use of Shadow DOM to encapsulate and hide crucial data and controls. This technical guide discusses the implementation of Selenium alongside PyShadow to navigate VT's Shadow DOM, enabling automated data extraction for file details and behavioral analysis.
 
 ### Understanding the Shadow DOM and Its Impact on Automation
 The Shadow DOM is a web technology that allows developers to encapsulate HTML, CSS, and JavaScript, preventing styles and scripts from interfering with the main document. While this improves web application modularity and maintainability, it poses significant barriers to automation tools like Selenium, which are designed to interact with the main DOM. As a result, elements within the Shadow DOM are inaccessible to Selenium, making automation efforts ineffective without additional tools.
+
+### Disclaimer: 
+This guide is crafted with the spirit of academic curiosity and is aimed at aiding cybersecurity students and enthusiasts in their educational pursuits. It's important to note that any commercial application of these methods for accessing VirusTotal (or any service) without proper authorization not only flirts with the boundaries of terms of service agreements but almost certainly crosses them. In simpler terms, if you're thinking about using this for your day job or any commercial venture, think again. Not only is it likely against the rules, but it might also earn your IP address a spot on the naughty list (read: banned). So, let's keep this in the realm of learning and exploration, shall we? After all, it's all fun and games until someone gets IP banned. Proceed with both caution and a healthy dose of common sense.
+
 ### The Challenge of Automating VirusTotal
-Automating VT lookups and analysis without official API access necessitates navigating its anti-automation defenses. Options for accessing VT data are limited to expensive premium API access or the restrictive community API. Selenium, equipped with a headless browser, initially seems like a viable solution for automation; however, VT's use of the Shadow DOM renders much of its content unreachable, requiring a different approacmmon sense.s, we hit a wall:", str(e))
+Automating VT lookups and analysis without official API access necessitates navigating its anti-automation defenses. Options for accessing VT data are limited to expensive premium API access or the restrictive community API. Selenium, equipped with a headless browser, initially seems like a viable solution for automation; however, VT's use of the Shadow DOM renders much of its content unreachable, requiring a different approach.  
+
+
+The following code demonstrates the Selenium failure case where no clickable links can be found in the browser DOM object.
 
 
 
@@ -16,10 +20,10 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from pyshadow.main import Shadow
 import re
 import pprint
 import time
+from selenium.webdriver.common.by import By
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')  # Run in headless mode, remove this line if you want to see the browser window
@@ -33,25 +37,72 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # Specify the target hash
-
 target_hash = 'da7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857'
 
 # Go to a webpage
 driver.get(f"https://www.virustotal.com/gui/file/{target_hash}/details")
-soup = BeautifulSoup(driver.page_source, 'html.parser')
-
-
+links = driver.find_elements(By.TAG_NAME, "a")
+if links == []:
+    print("no links found")
+else:
+    print(links)
+    # Iterate through the list of links
+    for link in links:
+        print(link)
+        # Get the href attribute (URL)
+        href = link.get_attribute("href")
+        # Get the text of the link
+        text = link.text
+        print(f"Link: {href}, Text: '{text}'")
+        
 ```
+
+    no links found
+
+
+### Incorporating PyShadow for Enhanced Access
+To overcome the limitations imposed by the Shadow DOM on automation efforts, we introduce PyShadow, a Python library designed to work seamlessly with Selenium for navigating and interacting with elements hidden within the Shadow DOM. By leveraging PyShadow, cybersecurity professionals can extend the capabilities of Selenium, enabling it to "see" and interact with elements that were previously inaccessible due to encapsulation on
+Utilizing PyShadow in conjunction with Selenium allows for the automation of data extraction from the "file details" element within VirusTotal, a critical component for comprehensive file analysis. The code snippet provided earlier demonstrates the challenge of accessing elements hidden by the Shadow DOM. However, with PyShadow, accessing these elements becomes straightforward:
 
 
 ```python
-#Use shadow driver to find hidden elements
+from pyshadow.main import Shadow
+# Other imports remain the same
+
+# Initialize the Chrome driver and Shadow as before
+driver = webdriver.Chrome(service=service, options=chrome_options)
 shadow = Shadow(driver)
+target_url = f"https://www.virustotal.com/gui/file/{target_hash}/details"
+print(target_url)
+# Navigate to the VirusTotal page for the specified file hash
+driver.get(target_url)
+
+# Use PyShadow to find elements within the Shadow DOM
 details_link = shadow.find_elements("a")
 for link in details_link:
     if link.text.upper() == "DETAILS":  # Check if the link text matches "DETAILS"
-        link.click()  # Click on the link
+        href = link.get_attribute("href")
+        print(f"Found and clicked the Details link: {href}")
+        link.click()  # Click on the link to navigate to the details section
+
 ```
+
+    https://www.virustotal.com/gui/file/da7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857/details
+    Found and clicked the Details link: https://www.virustotal.com/gui/file/da7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857/details
+
+
+Now that we've successfully clicked the "Details" tab of the analysis we're ready to extract the raw data using PyShadow.  We find the hidden `vt-ui-file-details` which contains a messy, unstructured chunk of data.  We use `parse_vt_ui_file_details_text` structure the file detail and implement  `parse_section_details` as an example of how to rebuild the Sections data a a list of dictionaries.
+
+### Structuring the Data with Python
+
+#### The `parse_section_details` Function
+The `parse_section_details` function takes a list of strings (`section_lines`), which represents lines of text from a specific section within the "file details" part of VT. This function is designed to parse these lines into a structured format. Assuming the first line contains headers and the subsequent lines contain corresponding values, the function splits these lines, maps the values to their respective headers, and fills in any missing values with 'N/A'. This structured approach allows for a more efficient analysis of the data, ensuring that each entry is correctly associated with its header.
+
+#### The `parse_vt_ui_file_details_text` Function
+The `parse_vt_ui_file_details_text` function demonstrates a more complex parsing operation. It takes a large block of text, which includes various details about a file analyzed by VT, and parses it into a structured dictionary. By identifying key sections within the text (such as "MD5", "SHA-256", "File type", etc.), the function systematically organizes the data under these keys. For sections that contain multiple lines of data, the information is stored as a list under the respective key. This function also includes special handling for certain keys, such as "Header", where additional parsing is applied to further structure the data.
+
+### Application Example
+An application example of these functions is shown in the final code snippet, where the text extracted from the "file details" section of VT (using PyShadow and Selenium) is parsed into a structured format. This format is invaluable for cybersecurity analysts who need to programmatically analyze file characteristics and behaviors based on VT's reports.  The use of Python dictionaries and lists to structure the data ensures that it is easily accessible and can be further processed, analyzed, or stored in a database for long-term analysis trends. 
 
 
 ```python
@@ -195,6 +246,11 @@ pprint.pprint(file_details)
      'Vhash': '075066655d1d75556az5-z'}
 
 
+### Enhancing Robustness with Error Handling in Automation Scripts
+Modern w web pag are dynamic with variable load times.sE elements can often change state or position, leading to challenges such as th`e StaleElementReferenceExcepti`on during automation tasks. This exception occurs when an element that a script interacts with has been altered or removed from the document object model (DOM) since it was last accessedWe handle these issues and look for the dynamic analysis tab.s.
+
+`The find_and_click_behavior_` incorporatesting a retry mechanism, the function attempts to locate and click on the "Behavior" link within a web page. This method is particularly useful in scenarios where web page elements may not be immediately accessible or may change due to asynchronous content loading:
+
 
 ```python
 from selenium.common.exceptions import StaleElementReferenceException
@@ -219,7 +275,6 @@ def find_and_click_behavior_link(shadow, max_retries=3):
     return False  # Failed after retries
 
 # Usage example
-# Assuming `shadow` is your shadow DOM reference
 find_and_click_behavior_link(shadow)
 ```
 
@@ -233,18 +288,15 @@ find_and_click_behavior_link(shadow)
 
 
 
+### Extracting Structured Data from Unstructured Text with Regex
 
-```python
-shadow.find_element("vt-ui-behaviour").text
+This codeblock demonstrates a powerful technique for extracting structured information from unstructured text data using regular expressions (regex). It defines a function, 'extract_info_individual_patterns', which takes a block of text as input and searches for specific patterns to isolate and retrieve relevant data segments. This approach is particularly useful for parsing and analyzing text that follows a semi-structured format, such as logs, reports, or any document where information is systematically arranged but not in a format readily accessible by conventional data extraction tools.
 
-```
+The function employs a dictionary named 'patterns', where each key represents a category of information to extract, and the corresponding value is a regex pattern designed to match that information within the text. The regex patterns are crafted to capture text between known markers or headings, enabling the precise extraction of data segments like "HTTP Requests", "IP Traffic", "Files Written", and various other categories relevant to the text's context.
 
+Upon finding a match for each pattern, the function stores the extracted data in a results dictionary, associating it with the appropriate category. If no match is found, it assigns 'None' to indicate the absence of data for that category. This method ensures that the output is a structured representation of the input text, making it easier to process and analyze further.
 
-
-
-    'Matches rule POLICY-OTHER HTTP request by IPv4 address attempt\nMatches rule PROTOCOL-DNS squid proxy dns PTR record response denial of service attempt\nMatches rule MALWARE-CNC Win.Trojan.Redline variant outbound request detected\nMatches rule ET INFO Microsoft net.tcp Connection Initialization Activity\nMatches rule ET MALWARE Redline Stealer TCP CnC Activity\nMatches rule ET MALWARE [ANY.RUN] RedLine Stealer Related (MC-NMF Authorization)\nMatches rule ET MALWARE Redline Stealer TCP CnC - Id1Response\nMatches rule ET MALWARE Redline Stealer Activity (Response)\nMatches rule ET MALWARE [ANY.RUN] Win32/Stealc Checkin (POST)\nMatches rule ET HUNTING GENERIC SUSPICIOUS POST to Dotted Quad with Fake Browser 1\nSee all\nHTTP Requests\nhttp://5.42.92.211/loghub/master\nIP Traffic\n192.229.211.108:80 (TCP)\n20.99.133.109:443 (TCP)\n20.99.184.37:443 (TCP)\n5.42.92.211:80 (TCP)\n77.91.124.82:19071 (TCP)\na83f:8110:8795:ffff:e00:0:0:0:53 (UDP)\nMemory Pattern Urls\nhttp://77.91.124.82:19071\ntcp://77.91.124.82:19071\nMemory Pattern IPs\n77.91.124.82\n77.91.124.82:19071\nC2AE\n9e411d62280afb7057d25590a6c82d7d\nCAPA\nb0d7e654070f02a850859c7c07eed321\nMicrosoft Sysinternals\n0f10ff58165fb61f585fcf77c1f8486b\nVenusEye Sandbox\n8ea95b738d8b5e0d0d146ba224872ccf\nVirusTotal Jujubox\ned7708f3cc219e5cdec1055af74aab3d\nZenbox\n99781b89f28ecc67f023329f5df6a771\nFiles Opened\nC:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe\nC:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nC:\\Program Files\\Internet Explorer\\en-US\\iexplore.exe.mui\nC:\\Program Files\\Internet Explorer\\iexplore.exe\nC:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.2102.4-0\\MsMpLics.dll\nC:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.2102.4-0\\X86\\MPCLIENT.DLL\nC:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.2102.4-0\\X86\\MpOav.dll\nC:\\ProgramData\\Microsoft\\Windows Defender\\Platform\\4.18.2102.4-0\\X86\\MsMpLics.dll\nC:\\Users\\user\\AppData\\Local\\360Browser\\Browser\\User Data\\\nC:\\Users\\user\\AppData\\Local\\7Star\\7Star\\User Data\\\nFiles Written\nC:\\Users\\user\\AppData\\Local\\Microsoft\\CLR_v4.0_32\\UsageLogs\\n2165894.exe.log\nC:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\History\nC:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\INetCache\nC:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\INetCookies\nC:\\Users\\user\\AppData\\Local\\SystemCache\nC:\\Users\\user\\AppData\\Local\\Temp\\4375vtb45tv8225nv4285n2.txt\nC:\\Users\\user\\AppData\\Local\\Temp\\IXP000.TMP\nC:\\Users\\user\\AppData\\Local\\Temp\\IXP000.TMP\\TMP4351$.TMP\nC:\\Users\\user\\AppData\\Local\\Temp\\IXP000.TMP\\o5013569.exe\nC:\\Users\\user\\AppData\\Local\\Temp\\IXP000.TMP\\y2116283.exe\nFiles Deleted\n%USERPROFILE%\\AppData\\Local\\Temp\\4375vtb45tv8225nv4285n2.txt\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\o5013569.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\y2116283.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\m7744779.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\n2165894.exe\nC:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER5455.tmp.WERInternalMetadata.xml\nC:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER5639.tmp.csv\nC:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER5669.tmp.txt\nC:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER816F.tmp.WERInternalMetadata.xml\nC:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WER8181.tmp.csv\nFiles With Modified Attributes\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\o5013569.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\y2116283.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\m7744779.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\n2165894.exe\nFiles Dropped\nRegistry Keys Opened\nHKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\.NETFramework\\XML\nHKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\nHKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\nHKEY_CURRENT_USER\\Software\nHKEY_CURRENT_USER\\Software\\Classes\\Local Settings\nHKEY_CURRENT_USER\\Software\\Microsoft\\.NETFramework\nHKEY_CURRENT_USER\\Software\\Microsoft\\Avalon.Graphics\nHKEY_CURRENT_USER\\Software\\Microsoft\\CTF\\DirectSwitchHotkeys\nHKEY_CURRENT_USER\\Software\\Microsoft\\Fusion\nHKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Download\nRegistry Keys Set\nHKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup0\nHKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup1\nHKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup0\nHKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup1\nHKLM\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup0\nHKLM\\Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup1\nHKU\\S-1-5-21-575823232-3065301323-1442773979-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Connections\\SavedLegacySettings\nHKU\\S-1-5-21-575823232-3065301323-1442773979-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ProxyEnable\nHKU\\S-1-5-21-575823232-3065301323-1442773979-1000\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ProxyServer\nRegistry Keys Deleted\nHKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup0\nHKLM\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\wextract_cleanup1\nProcesses Created\n%SAMPLEPATH%\\da7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\o5013569.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\y2116283.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\m7744779.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\n2165894.exe\nC:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\nC:\\Windows\\System32\\wuapihost.exe\nShell Commands\n"%SAMPLEPATH%\\da7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857.exe"\n"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe"\n%SAMPLEPATH%\n%TEMP%\\IXP000.TMP\\y2116283.exe\n%TEMP%\\IXP001.TMP\\m7744779.exe\n%TEMP%\\IXP001.TMP\\n2165894.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\o5013569.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\y2116283.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\m7744779.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\n2165894.exe\nProcesses Terminated\n%CONHOST% "-1274700196-564857691714262915989059378182664897-1280491350-675597650-1448166811\n%SAMPLEPATH%\n%SAMPLEPATH%\\da7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857.exe\n%TEMP%\\IXP000.TMP\\y2116283.exe\n%TEMP%\\IXP001.TMP\\m7744779.exe\n%TEMP%\\IXP001.TMP\\n2165894.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\o5013569.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\y2116283.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\m7744779.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\n2165894.exe\nProcesses Tree\n1084 - %windir%\\system32\\wbem\\wmiprvse.exe\n1092 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\n1116 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\n1136 - C:\\Windows\\System32\\wuapihost.exe\n1260 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\n132 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\n1380 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\n1516 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\n1604 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\n1868 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe\nMutexes Created\n\\Sessions\\1\\BaseNamedObjects\\DBWinMutex\n\\Sessions\\1\\BaseNamedObjects\\Global\\7307EA4058801080557736ffffffff\nMutexes Opened\nSignals Observed\nSignals Hooked\nRuntime Modules\n%SAMPLEPATH%\\da7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\o5013569.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP000.TMP\\y2116283.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\m7744779.exe\n%USERPROFILE%\\AppData\\Local\\Temp\\IXP001.TMP\\n2165894.exe\nC:\\Windows\\SysWOW64\\wbem\\wmiutils.dll\nKERNELBASE.dll\napi-ms-win-appmodel-runtime-l1-1-2\napi-ms-win-core-datetime-l1-1-1\napi-ms-win-core-fibers-l1-1-0\nInvoked Methods\nCalls Highlighted\nGetTickCount\nCryptographical Algorithms Observed\nCryptographical Keys Observed\nCryptographical Plain Text\nEncoding Algorithms Observed\nDecoded Text\n{"C2 url": "77.91.124.82:19071", "Bot Id": "moner"}\nHighlighted Text\nda7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857.exe\nSystem Property Lookups\nIWbemServices::Connect\nIWbemServices::ExecQuery - ROOT\\SecurityCenter : SELECT * FROM AntiSpyWareProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter : SELECT * FROM AntivirusProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter : SELECT * FROM FirewallProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter2 : SELECT * FROM AntiSpyWareProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter2 : SELECT * FROM AntivirusProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter2 : SELECT * FROM FirewallProduct\nIWbemServices::ExecQuery - root\\CIMV2 : SELECT * FROM Win32_VideoController\nIWbemServices::ExecQuery - root\\cimv2 : SELECT * FROM Win32_DiskDrive\nIWbemServices::ExecQuery - root\\cimv2 : SELECT * FROM Win32_OperatingSystem\nSystem Property Sets\nShared Preferences Lookups\nShared Preferences Sets\nContent Model Observers\nContent Model Sets\nDatabases Opened\nDatabases Deleted'
-
-
+The usage of 're.search' with the 're.DOTALL' flag allows the '.' character in regex patterns to match newline characters as well, ensuring that multi-line text segments are fully captured without breaking the pattern. This feature is crucial for accurately extracting information from complex text structures.
 
 
 ```python
@@ -272,18 +324,11 @@ def extract_info_individual_patterns(text):
         "Registry Keys Deleted": r"\nRegistry Keys Deleted\n(.*)Processes Created\n", # Processes Terminated
         "Processes Terminated": r"\nProcesses Terminated\n(.*)Processes Tree\n", #Processes Tree
         "Processes Tree": r"\nProcesses Tree\n(.*)Mutexes Created\n", #Processes Tree
-        #Mutexes Opened\nSignals Observed\nSignals Hooked\nRuntime Modules\n
         "Mutexes Created":r"\nMutexes Created\n(.*)Mutexes Opened\n",
         "Mutexes Opened": r"\nMutexes Opened\n(.*)Signals Observed\n", #Mutexes Opened
         "Signals Observed": r"\nSignals Observed\n(.*)Signals Hooked\n", #Signals Observed
         "Signals Hooked": r"\nSignals Hooked\n(.*)Runtime Modules\n", #Signals Hooked
         "Runtime Modules": r"\nRuntime Modules\n(.*)Invoked Methods\n", #Runtime Modules
-
-        #'Mutexes Opened\n'
-        #            'Signals Observed\n'
-        #            'Signals Hooked\n'
-        #            'Runtime Modules\n'
-        #\nCryptographical Algorithms Observed\nCryptographical Keys Observed\nCryptographical Plain Text\nEncoding Algorithms Observed\nDecoded Text\n{"C2 url": "77.91.124.82:19071", "Bot Id": "moner"}\nHighlighted Text\nda7f43a0af25d93cf194369d0fe96ce462d23e527156ffd3e6fcbb573bf3a857.exe\nSystem Property Lookups\nIWbemServices::Connect\nIWbemServices::ExecQuery - ROOT\\SecurityCenter : SELECT * FROM AntiSpyWareProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter : SELECT * FROM AntivirusProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter : SELECT * FROM FirewallProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter2 : SELECT * FROM AntiSpyWareProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter2 : SELECT * FROM AntivirusProduct\nIWbemServices::ExecQuery - ROOT\\SecurityCenter2 : SELECT * FROM FirewallProduct\nIWbemServices::ExecQuery - root\\CIMV2 : SELECT * FROM Win32_VideoController\nIWbemServices::ExecQuery - root\\cimv2 : SELECT * FROM Win32_DiskDrive\nIWbemServices::ExecQuery - root\\cimv2 : SELECT * FROM Win32_OperatingSystem\nSystem Property Sets\nShared Preferences Lookups\nShared Preferences Sets\nContent Model Observers\nContent Model Sets\nDatabases Opened\nDatabases Deleted'        
         "Cryptographical Algorithms Observed": r"\nCryptographical Algorithms Observed\n(.*)Cryptographical Keys Observed\n", #Cryptographical Algorithms Observed
         "Cryptographical Keys Observed": r"\nCryptographical Keys Observed\n(.*)Cryptographical Plain Text\n", #Cryptographical Keys Observed
         "Cryptographical Plain Text": r"\nCryptographical Plain Text\n(.*)Encoding Algorithms Observed\n", #Cryptographical Plain Text
@@ -312,7 +357,6 @@ def extract_info_individual_patterns(text):
     return results
 
 pprint.pprint(extract_info_individual_patterns(shadow.find_element("vt-ui-behaviour").text))
-
 ```
 
     {'C2AE': '9e411d62280afb7057d25590a6c82d7d',
@@ -479,13 +523,25 @@ pprint.pprint(extract_info_individual_patterns(shadow.find_element("vt-ui-behavi
      'Zenbox': '99781b89f28ecc67f023329f5df6a771'}
 
 
+### Simplifying and Cleaning Data Extraction from Text Elements
+
+This snippet demonstrates a straightforward approach for processing and cleaning text data extracted from a web element using Selenium. 
+
+1. **Extract Text Data**: Initially, the text content of a web element, identified by "vt-ui-expandable", is retrieved. This element is expected to contain a list of tags or keywords, each on a new line.
+
+2. **Split Text into List**: The '.split('\n')' method is applied to divide the text into a list, where each list item corresponds to a line of text from the original content. This step converts the block of text into a more manageable list format.
+
+3. **Refine and Clean List Items**: The list comprehension '[element.replace(" ", "") for element in tags.split("\n") if element.strip()]' serves multiple purposes:
+   - It iterates over each line obtained from the split operation.
+   - Uses '.strip()' to remove leading and trailing whitespace from each line, ensuring that only non-empty lines are considered.
+   - Applies '.replace(" ", "")' to each line to remove all spaces, ensuring that the tags are cleaned of any internal whitespace. 
+
 
 ```python
 tags = shadow.find_element("vt-ui-expandable").text
 tags.split('\n')
 tags_split_and_stripped = [element.replace(" ", "") for element in tags.split("\n") if element.strip()]
 tags_split_and_stripped
-
 ```
 
 
@@ -500,12 +556,21 @@ tags_split_and_stripped
 
 
 
+### Extracting and Structuring Sandbox Verdicts from Web Elements.
+
+1. **Extract Text Data**: The text is retrieved from a web element identified by "vt-ui-sandbox-verdicts". This element is expected to contain verdicts from various sandbox environments, each verdict on a new line.
+
+2. **Split Text into List**: By applying the `.split('\n')` method, the text is divided into a list where each item corresponds to a verdict from a different sandbox analysis. This step transforms the continuous text block into a structured list format, making it easier to iterate over and analyze each sandbox's verdict.
+
+3. **List Content and Interpretation**: The resulting list contains strings where each string represents a sandbox's verdict on the analyzed file. For example:
+   - `"The sandbox Zenbox flags this file as: MALWARE STEALER TROJAN EVADER"` indicates that the Zenbox sandbox has identified the file as malware with specific characteristics: it acts as a stealer, trojan, and has evasion capabilities.
+   - `"The sandbox C2AE flags this file as: STEALER"` shows that the C2AE sandbox specifically flags the file for its data-stealing capied threats.
+
 
 ```python
 tags = shadow.find_element("vt-ui-sandbox-verdicts").text
 tags = tags.split('\n')
 tags
-
 
 ```
 
@@ -517,14 +582,20 @@ tags
 
 
 
+### Extracting MITRE ATT&CK Framework Tactics and Techniques.
+
+1. **Retrieve Text Data**: The text from a web element identified by "vt-ui-mitre-tree" is retrieved. This element is expected to contain a list of MITRE ATT&CK tactics and techniques, structured in a hierarchical format.
+
+2. **Split Text into List**: By applying `.split('\n')`, the text block is divided into a list where each item corresponds to a line of text.
+
+3. **Resulting List**: The final list, `tags`, pr  clear, line-by-line enumeration of the tactics and techniques as they were listed in the text content of the web element. This list starts with a title 'MITRE ATT&CK Tactics and Techniques' followed by pairs of tactic names and their respective identification codes (e.g., 'Execution', 'T  This should be enhanced to be built into a dict similar to the "Sections" function shown earlier.y efforts.
+
 
 ```python
 #vt-ui-mitre-tree
 tags = shadow.find_element("vt-ui-mitre-tree").text
 tags = tags.split('\n')
 tags
-
-
 ```
 
 
@@ -550,14 +621,19 @@ tags
 
 
 
+### Parsing CAPA Signature Matches.
+
+1. **Retrieve Text Data**: The first line retrieves text from a web element identified by `"vt-ui-capa-signature-matches"`. This element contains CAPA signature matches that describe various characteristics or actions related to the analyzed file.
+
+2. **Split Text into List**: The `.split('\n')` method is used to divide the retrieved text into a list, with each element representing a line from the original text. This step is essential for isolating individual CAPA signatures.
+
+3. **Resulting List**: The output, `tags`, is a list of strings where each string represents a CAPA signature match. The list includes signatures such as 'Data-Manipulation', 'Linking', 'Host-Interaction', 'Load-Code', and 'Executable'. Each of these signatures provides insight into the actions or characteristics identified in the analyzed file, which can be critical for detailed malware analysis and threat intelous files.
+
 
 ```python
-
 tags = shadow.find_element("vt-ui-capa-signature-matches").text
 tags = tags.split('\n')
 tags
-
-
 ```
 
 
@@ -567,14 +643,19 @@ tags
 
 
 
+### Extracting Sigma Analysis Results.
+
+1. **Retrieve Sigma Analysis Text**: Initially, the text content is retrieved from a web element identified by `"vt-ui-sigma-analysis"`. This element is expected to contain Sigma analysis results, including severity levels and matches against specific Sigma rules.
+
+2. **Split Text into Lines**: The retrieved text is split into a list where each element corresponds to a line of the original text. This split operation facilitates the isolation and enumeration of individual Sigma analysis entries.
+
+3. **Parsed Result**: The final list, `tags`, contains entries that represent the analysis results. It includes severity levels (CRITICAL, HIGH, MEDIUM, LOW) with their respective counts, followed by detailed descriptions of Sigma rule iperations.
+
 
 ```python
-
 tags = shadow.find_element("vt-ui-sigma-analysis").text
 tags = tags.split('\n')
 tags
-
-
 ```
 
 
@@ -589,13 +670,20 @@ tags
 
 
 
+### Parsing Intrusion Detection System Alerts.
+
+1. **Retrieve IDS Alerts Text**: Initially, the text content, which comprises various IDS alerts, is fetched from a specific web element identified by `"vt-ui-ids-alerts"`. This element is presumed to contain a list of IDS alert descriptions.
+
+2. **Split Text into Individual Alerts**: The extracted text is then split line by line, transforming it into a list where each element represents a distinct IDS alert. This operation facilitates the analysis of each alert separately.
+
+3. **Parsed Alerts List**: The resulting list, `tags`, encapsulates individual IDS alerts, each described by the rule it matches. These descriptions include the type of activity detected (e.g., policy violations, malware communications, protocol anomalies) and specific identifiers like malware names or suspicious behavior p
+   on System.
+
 
 ```python
-
 tags = shadow.find_element("vt-ui-ids-alerts").text
 tags = tags.split('\n')
 tags
-
 
 ```
 
@@ -613,6 +701,8 @@ tags
      'Matches rule ET MALWARE [ANY.RUN] Win32/Stealc Checkin (POST)',
      'Matches rule ET HUNTING GENERIC SUSPICIOUS POST to Dotted Quad with Fake Browser 1',
      'See all']
+
+
 
 
 
@@ -645,13 +735,25 @@ tags
 
 
 
+### Analyzing File System Actions
+
+The provided code snippet and its output detail a series of file system actions performed by an application or process. This data is crucial for understanding how a specific piece of software interacts with the file system, which can be particularly relevant in the context of malware analysis, forensic investigations, or general security assessments. Let's break down the types of actions reported
+1. **Files Opened**: This section lists the files accessed by the application. It includes executable files for popular web browsers (Firefox, Chrome, Internet Explorer) and specific Windows Defender DLL files. Accessing these files could indicate normal operations, such as web browsing or checking for antivirus updates, but in a malicious context, it might suggest attempts to bypass security measures or monitor user activity.
+
+2. **Files Written**: Details files created or modified by the process. This includes logs, cache files, cookies, and temporary files, some of which are executables. Writing to these locations is common for applications to store data, but malicious software may also create or modify files in these directories to execute payloads, store harvested data, or maintain persistence on a system.
+
+3. **Files Deleted**: Lists files removed by the application. Deleting files, especially executables in temporary folders or system logs, can be a tactic used by malicious software to cover its tracks and reduce the chances of detection or forensic analysis.
+
+4. **Files With Modified Attributes**: This action indicates the modification of file properties, which could be used by software for various legitimate purposes, such as updating file status or permissions. However, in the context of malware, changing file attributes can be a method to hide malicious files (making them hidden or system files) or alter their execution behavior.
+
+5. **Files Dropped**: While not detailed in the output, this category would typically list files that the application has placed on the system, which could include additional payloads, configuration files, or tools needed by the software to perform its intended or malicious functions.
+
+
 
 ```python
 tags = shadow.find_element("file-system-actions").text
 tags = tags.split('\n')
 tags
-
-
 ```
 
 
@@ -699,13 +801,19 @@ tags
 
 
 
+### Understanding Registry Actions in Application Behavior.
+
+1. **Registry Keys Opened**: This section lists registry keys that the application has accessed but not necessarily modified. Access to certain keys, such as those related to internet settings or .NETFramework, can be legitimate for applications requiring configuration information. However, frequent or unusual access might signal attempts to gather information or change settings without user consent.
+
+2. **Registry Keys Set**: Indicates registry keys that have been created or modified by the application. The presence of multiple entries related to `RunOnce` suggests attempts to execute additional software automatically after a reboot, a common technique for ensuring malware persistence or completing installation processes. Modifications to internet settings and proxy configurations can also indicate efforts to redirect internet traffic or mask network communications.
+
+3. **Registry Keys Deleted**: Lists registry entries that the application has removed. Deleting `RunOnce` keys after they have been used is a technique to clean up traces of an installation or persistence mechanism, often seen in both legitimate software setups and malicious payloads to avoid detection or avelopment.
+
 
 ```python
 tags = shadow.find_element("registry-actions").text
 tags = tags.split('\n')
 tags
-
-
 ```
 
 
@@ -738,13 +846,21 @@ tags
 
 
 
+### Analyzing Process and Service Actions.
+
+1. **Processes Created**: Lists executable paths for processes initiated by the application. Notably, several processes originate from temporary directories (`%USERPROFILE%\\AppData\\Local\\Temp`) and the .NET Framework directory. Processes launched from temporary locations often raise security concerns, as this is a common tactic used by malware to execute payloads discretely.
+
+2. **Shell Commands**: Details commands executed via the shell, including paths to executables similar to those listed under processes created. This section provides insight into the specific actions an application or script is performing, which can include launching additional software, modifying system settings, or executing malicious activities.
+
+3. **Processes Terminated**: Enumerates processes that have been stopped or killed. Terminating processes, especially those related to system or security functions, can be a red flag for malicious behavior intended to evade detection, disable security measures, or interrupt system operations.
+
+4. **Processes Tree**: Provides a hierarchical view of process relationships, showing parent and child processes. This information is valuable for understanding how processes are related and can help in identifying root processes responsible for initiating a chain of potentially malicious aied threats.
+
 
 ```python
 tags = shadow.find_element("process-and-service-actions").text
 tags = tags.split('\n')
 tags
-
-
 ```
 
 
@@ -791,3 +907,5 @@ tags
      '1516 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe',
      '1604 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe',
      '1868 - C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\AppLaunch.exe']
+
+
