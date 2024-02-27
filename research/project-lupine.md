@@ -1,4 +1,8 @@
-# Project Lupine
+---
+layout: research
+title: Project Lupine
+---
+
 ![alt text](https://github.com/dyngnosis/project-lupine/blob/main/utils/static/ProjectLupine.png?raw=true)
 
 Project Lupine is an advanced initiative focused on using large language models to understand decompiled code and help in reverse engineering binaries. When given decompiled C, the models provide a function name, a function summary, and a detailed step-by-step explanation of the code's actions.
