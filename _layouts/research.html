@@ -1,7 +1,22 @@
 ---
 layout: base
 ---
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
 <div class="research-section">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('code').forEach((block) => {
+                // Assuming a default of JavaScript if language detection isn't needed
+                block.classList.add('python'); 
+                // If you want Prism to automatically detect language (less accurate),
+                // you might not add a specific language class, or you can try to use
+                // a generic class like 'language-none' depending on your version of Prism
+                // and test if auto-detection works for your use case.
+            });
+            Prism.highlightAll(); // Apply Prism highlighting
+        });
+        </script>
     <h1>{{ page.title }}</h1>
     {{ content }}
 </div>
