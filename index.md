@@ -9,15 +9,15 @@ Welcome to the central hub for all of my research. With over 20 years of experie
 
 ## Research Categories
 
-### [Machine Learning](https://research.richards.ai/machine-learning.html)
+### [Machine Learning](https://research.richards.ai/ml/machine-learning.html)
 
 Dive into my work on Machine Learning, where I explore algorithms, data analysis, and the development of models that can learn and make predictions or decisions without being explicitly programmed to perform tasks. 
 
-### [Reverse Engineering](https://research.richards.ai/reverse-engineering-malware.html)
+### [Reverse Engineering](https://research.richards.ai/reversing/reverse-engineering.html)
 
 Discover the world of Reverse Engineering, where I dissect software and systems to understand their functioning, identify vulnerabilities, and improve security. 
 
-### [Vulnerability Research](https://research.richards.ai/vulnerability-research.html)
+### [Vulnerability Research](https://research.richards.ai/vulns/vulnerability-research.html)
 
 Explore my findings in Vulnerability Research, focusing on identifying, analyzing, and addressing vulnerabilities in software and systems to enhance security measures and protect against threats.
 
