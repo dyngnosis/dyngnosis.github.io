@@ -10,11 +10,11 @@ Explore the interactive network here: https://rau.richards.ai/mwkg/mw_reports_te
 
 To see a much larger graph for vidar ransomware that includes information collected from 27 unique documents check out  (prepare to wait 10+ min for graph to compose):
 <img src="/assets/MWKG_banner.png" style="width:100%;">
-https://rau.richards.ai/mwkg/https://rau.richards.ai/mwkg/idar_reports_mistral7b.html
 
-The same large graph created with Yi-34b as the extraction model:
-[Cybersecurity Knowledge Network Visualization]
-https://rau.richards.ai/mwkg/https://rau.richards.ai/mwkg/vidar_reports_index_yi34b.html
+<a href="https://rau.richards.ai/mwkg/vidar_reports_mistral7b.html">Cybersecurity Knowledge Network Visualization</a>
+
+<a href="https://rau.richards.ai/mwkg/vidar_reports_index_yi34b.html">The same large graph created with Yi-34b as the extraction model</a>
+
 
 
 ## The Role of Knowledge Graphs in Cybersecurity Analysis
