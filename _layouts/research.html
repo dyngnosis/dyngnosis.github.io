@@ -4,19 +4,18 @@ layout: base
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
 <div class="research-section">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <!-- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             document.querySelectorAll('code').forEach((block) => {
-                // Assuming a default of JavaScript if language detection isn't needed
-                block.classList.add('language-none'); 
-                // If you want Prism to automatically detect language (less accurate),
-                // you might not add a specific language class, or you can try to use
-                // a generic class like 'language-none' depending on your version of Prism
-                // and test if auto-detection works for your use case.
+                // Replace existing class with 'language-none' to attempt auto-detection
+                block.className = 'language-none'; 
+                // This will remove any existing classes and apply only 'language-none'.
+                // If you have other classes on the 'code' elements that you wish to preserve,
+                // you need to handle them accordingly.
             });
             Prism.highlightAll(); // Apply Prism highlighting
         });
-        </script> -->
+    </script>
     <h1>{{ page.title }}</h1>
     {{ content }}
 </div>
