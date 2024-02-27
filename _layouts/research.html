@@ -17,22 +17,6 @@ layout: base
         });
 
     </script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('code').forEach((block) => {
-            // Directly target the class attribute and trim any leading spaces
-            let classes = block.className;
-            // Specifically fix the space issue for ' language-python'
-            classes = classes.replace(/(\s+)?language-python/, 'language-python').trim();
-            // Update the block's className with the corrected string
-            block.className = classes;
-        });
-        Prism.highlightAll(); // Apply Prism highlighting
-    });
-</script>
-
-
     <h1>{{ page.title }}</h1>
     {{ content }}
 </div>
