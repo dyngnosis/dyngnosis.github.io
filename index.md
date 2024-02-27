@@ -21,6 +21,10 @@ Discover the world of Reverse Engineering, where I dissect software and systems 
 
 Explore my findings in Vulnerability Research, focusing on identifying, analyzing, and addressing vulnerabilities in software and systems to enhance security measures and protect against threats.
 
+### [Malware Research](https://research.richards.ai/malware/malware-research.html)
+
+Explore my findings in Vulnerability Research, focusing on identifying, analyzing, and addressing vulnerabilities in software and systems to enhance security measures and protect against threats.
+
 ## About Me
 
 With a passion for technology and a relentless pursuit of knowledge, I've dedicated the past two decades to researching and advancing the fields of Machine Learning, Reverse Engineering, and Vulnerability Research. My work aims to push the boundaries of what's possible, contributing to safer, smarter, and more efficient systems.
