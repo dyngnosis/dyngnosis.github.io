@@ -3,12 +3,12 @@ layout: research
 title: Formulating a Knowledge Network from Malware Analysis Reports
 ---
 
-![Cybersecurity Knowledge Network Visualization](./assets/MWKG_banner_single.png)
+![Cybersecurity Knowledge Network Visualization](https://github.com/dyngnosis/Malware-Knowledge-Graph/assets/MWKG_banner_single.png)
 *Illustration of a knowledge network constructed from malware reports*
 Explore the interactive network here: https://rau.richards.ai/mwkg/mw_reports_test_index.html
 
 To see a much larger graph for vidar ransomware that includes information collected from 27 unique documents check out  (prepare to wait 10+ min for graph to compose):
-![Cybersecurity Knowledge Network Visualization](./assets/MWKG_banner.png)
+![Cybersecurity Knowledge Network Visualization](https://github.com/dyngnosis/Malware-Knowledge-Graph/assets/MWKG_banner.png)
 https://rau.richards.ai/mwkg/https://rau.richards.ai/mwkg/idar_reports_mistral7b.html
 
 The same large graph created with Yi-34b as the extraction model:
@@ -51,7 +51,7 @@ To craft a graph tailored to malware analysis reports, adapt the following noteb
 
 The notebook executes the strategy showcased in the following flowchart.
 
-<img src="./assets/Method.png"/>
+<img src="https://github.com/dyngnosis/Malware-Knowledge-Graph/assets/Method.png"/>
 
 1. Partition the text of malware reports into segments, assigning a unique ID to each.
 2. In each segment, extract cybersecurity concepts, threat actors, and malware families, alongside their semantic interrelations, weighting these initial connections as W1.
