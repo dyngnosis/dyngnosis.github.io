@@ -3,7 +3,9 @@ layout: research
 title: Reverse Engineering Malware
 ---
 
-## Reverse Engineering
+- **Virustotal Automation with Selenium**  
+  Overcoming VirusTotal's Shadow DOM with Selenium and PyShadow  
+  [Virustotal Automation with Selenium](http://research.richards.ai/research/automation_vt)
 
 - **LLM Enhanced Reverse Engineering Malware**  
   Utilizing Large Language Models to revolutionize the reverse engineering process for malware analysis.  
