@@ -4,6 +4,8 @@ title: Overcoming VirusTotal's Shadow DOM with Selenium and PyShadow
 ---
 For cybersecurity practitioners, VirusTotal (VT) is a critical tool for the analysis and scanning of files and URLs. However, automating interactions with VT can be challenging due to its advanced anti-automation measures, including the use of Shadow DOM to encapsulate and hide crucial data and controls. This technical guide discusses the implementation of Selenium alongside PyShadow to navigate VT's Shadow DOM, enabling automated data extraction for file details and behavioral analysis.
 
+[vt-scraper.py (GitHub)](https://github.com/dyngnosis/vt-scraper)
+
 ### Understanding the Shadow DOM and Its Impact on Automation
 The Shadow DOM is a web technology that allows developers to encapsulate HTML, CSS, and JavaScript, preventing styles and scripts from interfering with the main document. While this improves web application modularity and maintainability, it poses significant barriers to automation tools like Selenium, which are designed to interact with the main DOM. As a result, elements within the Shadow DOM are inaccessible to Selenium, making automation efforts ineffective without additional tools.
 
