@@ -66,8 +66,7 @@ else:
 
 
 ### Incorporating PyShadow for Enhanced Access
-To overcome the limitations imposed by the Shadow DOM on automation efforts, we introduce PyShadow, a Python library designed to work seamlessly with Selenium for navigating and interacting with elements hidden within the Shadow DOM. By leveraging PyShadow, cybersecurity professionals can extend the capabilities of Selenium, enabling it to "see" and interact with elements that were previously inaccessible due to encapsulation on
-Utilizing PyShadow in conjunction with Selenium allows for the automation of data extraction from the "file details" element within VirusTotal, a critical component for comprehensive file analysis. The code snippet provided earlier demonstrates the challenge of accessing elements hidden by the Shadow DOM. However, with PyShadow, accessing these elements becomes straightforward:
+To overcome the limitations imposed by the Shadow DOM on automation efforts, we introduce PyShadow, a Python library designed to work seamlessly with Selenium for navigating and interacting with elements hidden within the Shadow DOM. By leveraging PyShadow, cybersecurity professionals can extend the capabilities of Selenium, enabling it to "see" and interact with elements that were previously inaccessible due to encapsulation.  Utilizing PyShadow in conjunction with Selenium allows for the automation of data extraction from the "file details" element within VirusTotal, a critical component for comprehensive file analysis. The code snippet provided earlier demonstrates the challenge of accessing elements hidden by the Shadow DOM. However, with PyShadow, accessing these elements becomes straightforward:
 
 
 ```python
