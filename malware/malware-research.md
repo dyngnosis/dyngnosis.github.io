@@ -12,11 +12,11 @@ title: Machine Learning Research
   [ML for Vulnerability Detection in Source Code](http://research.richards.ai/research/source-code-vulnerability)
 
 - **Machine Learning in Exploit Development**  
-  Leveraging LLMs to generate and test exploit code using vulnerable source code as input
+  Leveraging LLMs to generate and test exploit code using vulnerable source code as input  
   [ML for Exploit Development](http://research.richards.ai/research/exploit-development-ml)
 
 - **Signature Development with Machine Learning for Security Detection**  
-  Enhancing detection capabilities through ML-generated security signatures derived using binary static analysis and LLMs
+  Enhancing detection capabilities through ML-generated security signatures derived using binary static analysis and LLMs  
   [ML for Security Signature Development](http://research.richards.ai/research/security-signature-ml)
 
 - **Decompiled Code Analysis and Malware Understanding through ML**  
