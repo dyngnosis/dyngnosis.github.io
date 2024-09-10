@@ -3,9 +3,7 @@ layout: research
 title: AI Security Research Hub
 ---
 
-# AI Security Research Hub
-
-Welcome to the AI Security Research Hub, a comprehensive resource for cutting-edge research in AI security, with a focus on red teaming and jailbreaking attacks on large language models.
+Welcome to Richards.AI Security Research Hub, a comprehensive resource for cutting-edge research in AI security, with a focus on red teaming and jailbreaking attacks on large language models.
 
 ## Featured Research Areas
 
