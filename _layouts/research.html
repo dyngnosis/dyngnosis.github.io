@@ -1,13 +1,48 @@
+
+<!-- research.html -->
 ---
 layout: base
 ---
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
 <div class="research-section">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/style.css">
     <h1>{{ page.title }}</h1>
     {{ content }}
 </div>
 
+<!-- Additional CSS for markdown content (add this to your style.css file) -->
+<style>
+    .research-section h1, .research-section h2, .research-section h3, .research-section h4, .research-section h5, .research-section h6 {
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    .research-section p {
+        margin-bottom: 1em;
+    }
+    .research-section ul, .research-section ol {
+        margin-bottom: 1em;
+        padding-left: 2em;
+    }
+    .research-section code {
+        background-color: #f4f4f4;
+        padding: 2px 4px;
+        border-radius: 3px;
+    }
+    .research-section pre {
+        background-color: #f4f4f4;
+        padding: 1em;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    .research-section a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+    .research-section a:hover {
+        text-decoration: underline;
+    }
+    .research-section blockquote {
+        border-left: 4px solid #ccc;
+        padding-left: 1em;
+        margin-left: 0;
+        font-style: italic;
+    }
+</style>
