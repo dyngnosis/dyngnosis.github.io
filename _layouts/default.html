@@ -15,7 +15,7 @@
             opacity: 0;
         }
         .modal {
-            display: none;
+            display: block;
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -26,7 +26,8 @@
             background-color: rgba(0,0,0,0.4);
         }
         .modal-content {
-            background-color: #fefefe;
+            background-color: white;
+            color: black;
             margin: 15% auto;
             padding: 20px;
             border: 1px solid #888;
@@ -163,6 +164,7 @@
                             this.paperContent = `<pre>${text}</pre>`;
                         }
                         this.showModal = true;
+                        console.log('Modal should be visible now');
                     } catch (error) {
                         console.error('Error fetching paper content:', error);
                     }
@@ -170,6 +172,7 @@
                 closeModal() {
                     this.showModal = false;
                     this.paperContent = '';
+                    console.log('Modal closed');
                 }
             },
             mounted() {
