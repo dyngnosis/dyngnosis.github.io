@@ -4,3 +4,4 @@ description: A collection of research, experiment results, and tools I can share
 show_downloads: false
 google_analytics:
 layout: base
+baseurl: "/dyngnosis.github.io"
