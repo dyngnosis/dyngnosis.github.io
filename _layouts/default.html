@@ -68,7 +68,7 @@
                 <transition-group name="fade">
                     <div v-for="paper in filteredPapers" :key="paper.title" class="bg-white p-6 rounded-lg shadow-md">
                         <h2 class="text-xl font-semibold mb-2">
-                            <a @click.prevent="openPaper(paper)" href="#" class="text-blue-600 hover:underline cursor-pointer">{% raw %}{{ paper.title }}{% endraw %}</a>
+                            <a @click.prevent="openPaper(paper)" :href="paper.link" class="text-blue-600 hover:underline cursor-pointer">{% raw %}{{ paper.title }}{% endraw %}</a>
                         </h2>
                         <div class="mb-2">
                             <span v-for="tag in paper.tags" :key="tag" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
