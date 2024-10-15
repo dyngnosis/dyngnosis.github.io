@@ -6,6 +6,7 @@
     <title>{{ page.title | default: site.title }}</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
         [v-cloak] { display: none; }
         .fade-enter-active, .fade-leave-active {
@@ -108,16 +109,9 @@
     ];
     </script>
 
-    <script type="module">
-        import * as marked from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
-        window.marked = marked;  // Expose globally for Vue to use
-        console.log('Marked library imported:', typeof marked);
-    </script>
-
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         console.log('DOM fully loaded and parsed');
-        console.log('Marked library available:', typeof marked);
 
         new Vue({
             el: '#app',
@@ -156,13 +150,7 @@
                         const response = await fetch(paper.link);
                         const text = await response.text();
                         console.log('Fetched text:', text.substring(0, 100) + '...');
-                        if (typeof marked.parse === 'function') {
-                            console.log('Using Marked.parse to convert content');
-                            this.paperContent = marked.parse(text);
-                        } else {
-                            console.warn('Marked.parse not available. Showing raw text.');
-                            this.paperContent = `<pre>${text}</pre>`;
-                        }
+                        this.paperContent = marked.parse(text);
                         this.showModal = true;
                         console.log('Modal should be visible now');
                     } catch (error) {
@@ -177,7 +165,6 @@
             },
             mounted() {
                 console.log('Vue instance mounted');
-                console.log('Marked library available:', typeof marked);
             }
         });
     });

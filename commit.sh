@@ -18,3 +18,4 @@ commit_msg=$(xclip -selection clipboard -o | ollama run llama3.1:70b "Create a s
 # Commit the changes with the generated commit message
 git commit -m "$commit_msg"
 
+git push
