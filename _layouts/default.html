@@ -174,37 +174,49 @@
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 },
                 async openPaper(paper) {
-                    console.log('Opening paper:', paper.title);
-                    try {
-                        const response = await fetch(paper.link);
-                        const text = await response.text();
-                        console.log('Fetched text:', text.substring(0, 100) + '...');
-                        const formattedContent = this.formatContent(text);
-                        this.paperContent = marked.parse(formattedContent);
-                        if (this.isMobile) {
-                            this.showModal = true;
-                        } else {
-                            this.showSidePanel = true;
-                        }
-                        console.log('Content should be visible now');
-                    } catch (error) {
-                        console.error('Error fetching paper content:', error);
+                console.log('Opening paper:', paper.title);
+                try {
+                    const response = await fetch(paper.link);
+                    const text = await response.text();
+                    console.log('Fetched text:', text.substring(0, 100) + '...');
+                    
+                    console.log('Before formatting:', text.split('\n').slice(0, 5).join('\n')); // Debug: Show first 5 lines before formatting
+                    const formattedContent = this.formatContent(text);
+                    console.log('After formatting:', formattedContent.split('\n').slice(0, 5).join('\n')); // Debug: Show first 5 lines after formatting
+                    
+                    this.paperContent = marked.parse(formattedContent);
+                    console.log('Parsed content:', this.paperContent.substring(0, 200) + '...'); // Debug: Show beginning of parsed content
+                    
+                    if (this.isMobile) {
+                        this.showModal = true;
+                    } else {
+                        this.showSidePanel = true;
                     }
-                },
-                formatContent(content) {
-                    const lines = content.split('\n');
-                    let startIndex = lines.findIndex(line => line.startsWith('Publication Date:'));
-                    if (startIndex === -1) startIndex = 0;
-                    
-                    const formattedLines = lines.slice(startIndex + 1).map(line => {
-                        if (['Summary:', 'Key Contributions:', 'Methodology:', 'Datasets:', 'Future Work:', 'Tools Introduced:'].includes(line.trim())) {
-                            return `### ${line.trim()}`;
-                        }
-                        return line;
-                    });
-                    
-                    return formattedLines.join('\n');
-                },
+                    console.log('Content should be visible now');
+                } catch (error) {
+                    console.error('Error fetching paper content:', error);
+                }
+            },
+            formatContent(content) {
+                console.log('formatContent called'); // Debug: Confirm method is called
+                const lines = content.split('\n');
+                let startIndex = lines.findIndex(line => line.startsWith('Publication Date:'));
+                console.log('Publication Date line index:', startIndex); // Debug: Check where content starts
+                
+                if (startIndex === -1) startIndex = 0;
+                
+                const formattedLines = lines.slice(startIndex + 1).map(line => {
+                    if (['Summary:', 'Key Contributions:', 'Methodology:', 'Datasets:', 'Future Work:', 'Tools Introduced:'].includes(line.trim())) {
+                        console.log('Converting to heading:', line.trim()); // Debug: Log each line converted to heading
+                        return `### ${line.trim()}`;
+                    }
+                    return line;
+                });
+                
+                console.log('Formatted content length:', formattedLines.length); // Debug: Check output length
+                return formattedLines.join('\n');
+            },
+
                 closeModal() {
                     this.showModal = false;
                     this.paperContent = '';
