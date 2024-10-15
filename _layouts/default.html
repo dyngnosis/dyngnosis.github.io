@@ -44,6 +44,26 @@
             font-weight: bold;
             cursor: pointer;
         }
+        .side-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            overflow-y: auto;
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+            z-index: 1000;
+        }
+        .side-panel.open {
+            transform: translateX(0);
+        }
+        @media (max-width: 768px) {
+            .side-panel {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -52,7 +72,7 @@
             <h1 class="text-3xl font-bold">{{ page.title | default: site.title }}</h1>
         </header>
 
-        <main class="container mx-auto px-4 py-8">
+        <main class="container mx-auto px-4 py-8" :class="{'pr-1/2': showSidePanel && !isMobile}">
             <div class="mb-8">
                 <input v-model="searchQuery" @input="filterPapers" type="text" placeholder="Search papers..." class="w-full p-2 border rounded">
             </div>
@@ -87,6 +107,13 @@
             ↑
         </button>
 
+        <div class="side-panel" :class="{'open': showSidePanel}">
+            <div class="p-6">
+                <span class="close" @click="closeSidePanel">&times;</span>
+                <div v-html="paperContent"></div>
+            </div>
+        </div>
+
         <div class="modal" v-show="showModal">
             <div class="modal-content">
                 <span class="close" @click="closeModal">&times;</span>
@@ -120,7 +147,9 @@
                 searchQuery: '',
                 selectedTags: [],
                 showModal: false,
+                showSidePanel: false,
                 paperContent: '',
+                isMobile: window.innerWidth <= 768,
             },
             computed: {
                 uniqueTags() {
@@ -151,8 +180,12 @@
                         const text = await response.text();
                         console.log('Fetched text:', text.substring(0, 100) + '...');
                         this.paperContent = marked.parse(text);
-                        this.showModal = true;
-                        console.log('Modal should be visible now');
+                        if (this.isMobile) {
+                            this.showModal = true;
+                        } else {
+                            this.showSidePanel = true;
+                        }
+                        console.log('Content should be visible now');
                     } catch (error) {
                         console.error('Error fetching paper content:', error);
                     }
@@ -161,10 +194,29 @@
                     this.showModal = false;
                     this.paperContent = '';
                     console.log('Modal closed');
+                },
+                closeSidePanel() {
+                    this.showSidePanel = false;
+                    this.paperContent = '';
+                    console.log('Side panel closed');
+                },
+                handleResize() {
+                    this.isMobile = window.innerWidth <= 768;
+                    if (!this.isMobile && this.showModal) {
+                        this.showModal = false;
+                        this.showSidePanel = true;
+                    } else if (this.isMobile && this.showSidePanel) {
+                        this.showSidePanel = false;
+                        this.showModal = true;
+                    }
                 }
             },
             mounted() {
                 console.log('Vue instance mounted');
+                window.addEventListener('resize', this.handleResize);
+            },
+            beforeDestroy() {
+                window.removeEventListener('resize', this.handleResize);
             }
         });
     });
