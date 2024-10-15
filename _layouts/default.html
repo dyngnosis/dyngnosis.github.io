@@ -95,10 +95,10 @@
 
     <script>
     var papersData = [
-        {% for row in site.data.papers %}
+        {% for row in site.data.papers2 %}
         {
             title: {{ row.title | jsonify }},
-            link: "{{ site.baseurl }}{{ row.link }}",
+            link: {{ row.link | jsonify }},
             tags: {{ row.tags | jsonify }},
             date: {{ row.date | jsonify }}
         }{% unless forloop.last %},{% endunless %}
