@@ -32,6 +32,8 @@
             border: 1px solid #888;
             width: 80%;
             max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
         }
         .close {
             color: #aaa;
@@ -96,7 +98,7 @@
         {% for row in site.data.papers %}
         {
             title: {{ row.title | jsonify }},
-            link: {{ row.link | jsonify }},
+            link: "{{ site.baseurl }}{{ row.link }}",
             tags: {{ row.tags | jsonify }},
             date: {{ row.date | jsonify }}
         }{% unless forloop.last %},{% endunless %}
