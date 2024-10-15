@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <style>
+        [v-cloak] { display: none; }
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity .5s;
+        }
+        .fade-enter, .fade-leave-to {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div id="app" v-cloak>
+        <header class="bg-blue-600 text-white p-4">
+            <h1 class="text-3xl font-bold">{{ page.title | default: site.title }}</h1>
+        </header>
+
+        <main class="container mx-auto px-4 py-8">
+            <div class="mb-8">
+                <input v-model="searchQuery" @input="filterPapers" type="text" placeholder="Search papers..." class="w-full p-2 border rounded">
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-xl font-semibold mb-2">Filter by tags:</h2>
+                <div class="flex flex-wrap gap-2">
+                    <button v-for="tag in uniqueTags" :key="tag" @click="toggleTag(tag)" :class="{'bg-blue-500 text-white': selectedTags.includes(tag), 'bg-gray-200': !selectedTags.includes(tag)}" class="px-3 py-1 rounded">
+                        {% raw %}{{ tag }}{% endraw %}
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <transition-group name="fade">
+                    <div v-for="paper in filteredPapers" :key="paper.title" class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold mb-2">
+                            <a :href="paper.link" class="text-blue-600 hover:underline">{% raw %}{{ paper.title }}{% endraw %}</a>
+                        </h2>
+                        <div class="mb-2">
+                            <span v-for="tag in paper.tags" :key="tag" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                                {% raw %}{{ tag }}{% endraw %}
+                            </span>
+                        </div>
+                        <p class="text-gray-600">Last Updated: {% raw %}{{ paper.date }}{% endraw %}</p>
+                    </div>
+                </transition-group>
+            </div>
+        </main>
+
+        <button @click="scrollToTop" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full shadow-lg">
+            ↑
+        </button>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                papers: [],
+                searchQuery: '',
+                selectedTags: [],
+            },
+            computed: {
+                uniqueTags() {
+                    return [...new Set(this.papers.flatMap(paper => paper.tags))];
+                },
+                filteredPapers() {
+                    return this.papers.filter(paper => {
+                        const matchesSearch = paper.title.toLowerCase().includes(this.searchQuery.toLowerCase());
+                        const matchesTags = this.selectedTags.length === 0 || this.selectedTags.every(tag => paper.tags.includes(tag));
+                        return matchesSearch && matchesTags;
+                    });
+                }
+            },
+            methods: {
+                filterPapers() {
+                    // This method is called automatically when searchQuery changes
+                },
+                toggleTag(tag) {
+                    const index = this.selectedTags.indexOf(tag);
+                    if (index === -1) {
+                        this.selectedTags.push(tag);
+                    } else {
+                        this.selectedTags.splice(index, 1);
+                    }
+                },
+                scrollToTop() {
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                }
+            },
+            mounted() {
+                // Parse the Markdown table and populate the papers array
+                const tableRows = document.querySelectorAll('table tr');
+                this.papers = Array.from(tableRows).slice(1).map(row => {
+                    const [title, tags, date] = row.querySelectorAll('td');
+                    return {
+                        title: title.textContent.trim(),
+                        link: title.querySelector('a').href,
+                        tags: tags.textContent.trim().split(' '),
+                        date: date.textContent.trim()
+                    };
+                });
+            }
+        });
+    </script>
+</body>
+</html>

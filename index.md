@@ -1,3 +1,7 @@
+---
+layout: default
+title: AI Security Research Hub
+---
 # AI Security Research Hub
 
 Welcome to the AI Security Research Hub. Here you'll find links to our latest research papers.
