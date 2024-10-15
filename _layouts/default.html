@@ -58,6 +58,10 @@
         </button>
     </div>
 
+    <div id="markdown-content" style="display: none;">
+        {{ content }}
+    </div>
+
     <script>
         new Vue({
             el: '#app',
@@ -95,8 +99,12 @@
                 }
             },
             mounted() {
+                // Create a temporary div to hold the Markdown content
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = document.getElementById('markdown-content').innerHTML;
+
                 // Parse the Markdown table and populate the papers array
-                const tableRows = document.querySelectorAll('table tr');
+                const tableRows = tempDiv.querySelectorAll('table tr');
                 this.papers = Array.from(tableRows).slice(1).map(row => {
                     const [title, tags, date] = row.querySelectorAll('td');
                     return {
