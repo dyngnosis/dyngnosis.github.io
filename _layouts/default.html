@@ -83,7 +83,6 @@
             ↑
         </button>
 
-        <!-- Modal for paper content -->
         <div class="modal" v-show="showModal">
             <div class="modal-content">
                 <span class="close" @click="closeModal">&times;</span>
@@ -92,16 +91,25 @@
         </div>
     </div>
 
-    <div id="markdown-content" style="display: none;">
-        {{ content }}
-    </div>
+    <script>
+    var papersData = [
+        {% for row in site.data.papers %}
+        {
+            title: {{ row.title | jsonify }},
+            link: {{ row.link | jsonify }},
+            tags: {{ row.tags | jsonify }},
+            date: {{ row.date | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ];
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
         new Vue({
             el: '#app',
             data: {
-                papers: [],
+                papers: papersData,
                 searchQuery: '',
                 selectedTags: [],
                 showModal: false,
@@ -149,25 +157,6 @@
                     this.showModal = false;
                     this.paperContent = '';
                 }
-            },
-            mounted() {
-                // Create a temporary div to hold the Markdown content
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = document.getElementById('markdown-content').innerHTML;
-
-                // Parse the Markdown table and populate the papers array
-                const tableRows = tempDiv.querySelectorAll('table tr');
-                this.papers = Array.from(tableRows).slice(1).map(row => {
-                    const [title, tags, date] = row.querySelectorAll('td');
-                    const link = title.querySelector('a').href;
-                    const rawLink = link.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
-                    return {
-                        title: title.textContent.trim(),
-                        link: rawLink,
-                        tags: tags.textContent.trim().split(' '),
-                        date: date.textContent.trim()
-                    };
-                });
             }
         });
     </script>
