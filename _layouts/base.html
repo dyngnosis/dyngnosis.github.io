@@ -1,55 +1,25 @@
-<!-- base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>{{ page.title | default: site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <!-- Prism CSS for syntax highlighting -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-image: url('/assets/background.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        main {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
-    <div class="content">
-        <header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- You can add a logo image or site title here -->
+                <a href="/">{{ site.title | default: "Richards.AI Research" }}</a>
+            </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="/ml/machine-learning.html">Machine Learning</a></li>
                     <li><a href="/reversing/reverse-engineering.html">Reverse Engineering</a></li>
@@ -57,11 +27,18 @@
                     <li><a href="/malware/malware-research.html">Malware Research</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            {{ content }}
-        </main>
-    </div>
+        </div>
+    </header>
+    <main class="container">
+        {{ content }}
+    </main>
+    <footer>
+        <div class="container">
+            <!-- Footer content -->
+            <p>&copy; {{ site.time | date: "%Y" }} {{ site.title | default: "Your Site Name" }}. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Prism JS for syntax highlighting -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </body>
