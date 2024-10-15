@@ -66,7 +66,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <transition-group name="fade">
-                    <div v-for="paper in filteredPapers" :key="paper.title" class="bg-white p-6 rounded-lg shadow-md">
+                    <div v-for="paper in filteredPapers" :key="paper.id" class="bg-white p-6 rounded-lg shadow-md">
                         <h2 class="text-xl font-semibold mb-2">
                             <a @click.prevent="openPaper(paper)" :href="paper.link" class="text-blue-600 hover:underline cursor-pointer">{% raw %}{{ paper.title }}{% endraw %}</a>
                         </h2>
@@ -97,6 +97,7 @@
     var papersData = [
         {% for row in site.data.papers2 %}
         {
+            id: {{ forloop.index }},
             title: {{ row.title | jsonify }},
             link: {{ row.link | jsonify }},
             tags: {{ row.tags | jsonify }},
@@ -159,12 +160,12 @@
                         const response = await fetch(paper.link);
                         const text = await response.text();
                         console.log('Fetched text:', text.substring(0, 100) + '...');
-                        if (typeof marked === 'function') {
+                        if (typeof marked === 'object' && typeof marked.parse === 'function') {
                             console.log('Marking down content');
-                            const content = marked(text);
+                            const content = marked.parse(text);
                             this.paperContent = content;
                         } else {
-                            console.error('marked is not a function');
+                            console.error('marked.parse is not a function');
                             this.paperContent = text;
                         }
                         this.showModal = true;
