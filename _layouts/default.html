@@ -108,6 +108,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
+        console.log('Script started');
+        console.log('Marked library:', typeof marked);
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log('DOM fully loaded and parsed');
+            console.log('Marked library after DOM load:', typeof marked);
+        });
+
         new Vue({
             el: '#app',
             data: {
@@ -145,11 +153,20 @@
                     window.scrollTo({top: 0, behavior: 'smooth'});
                 },
                 async openPaper(paper) {
+                    console.log('Opening paper:', paper.title);
+                    console.log('Marked library in openPaper:', typeof marked);
                     try {
                         const response = await fetch(paper.link);
                         const text = await response.text();
-                        const content = marked(text);
-                        this.paperContent = content;
+                        console.log('Fetched text:', text.substring(0, 100) + '...');
+                        if (typeof marked === 'function') {
+                            console.log('Marking down content');
+                            const content = marked(text);
+                            this.paperContent = content;
+                        } else {
+                            console.error('marked is not a function');
+                            this.paperContent = text;
+                        }
                         this.showModal = true;
                     } catch (error) {
                         console.error('Error fetching paper content:', error);
@@ -159,6 +176,10 @@
                     this.showModal = false;
                     this.paperContent = '';
                 }
+            },
+            mounted() {
+                console.log('Vue instance mounted');
+                console.log('Marked library in mounted:', typeof marked);
             }
         });
     </script>
