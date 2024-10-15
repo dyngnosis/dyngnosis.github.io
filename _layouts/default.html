@@ -108,7 +108,7 @@
     </script>
 
     <script type="module">
-        import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
+        import * as marked from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
         window.marked = marked;  // Expose globally for Vue to use
         console.log('Marked library imported:', typeof marked);
     </script>
@@ -155,12 +155,11 @@
                         const response = await fetch(paper.link);
                         const text = await response.text();
                         console.log('Fetched text:', text.substring(0, 100) + '...');
-                        const markdownFunction = typeof marked === 'function' ? marked : window.marked;
-                        if (typeof markdownFunction === 'function') {
-                            console.log('Using Marked to convert content');
-                            this.paperContent = markdownFunction(text);
+                        if (typeof marked.parse === 'function') {
+                            console.log('Using Marked.parse to convert content');
+                            this.paperContent = marked.parse(text);
                         } else {
-                            console.warn('Marked not available. Showing raw text.');
+                            console.warn('Marked.parse not available. Showing raw text.');
                             this.paperContent = `<pre>${text}</pre>`;
                         }
                         this.showModal = true;
