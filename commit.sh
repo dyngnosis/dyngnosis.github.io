@@ -1,17 +1,20 @@
 #!/bin/bash
 
-# Stage all changes (including new and modified files)
+# Stage all changes, including untracked files
 git add .
 
-# Check for any staged changes
+# Check if there are any staged changes
 if git diff --cached --quiet; then
   echo "No changes to commit."
   exit 0
 fi
 
-# Generate the commit message using Ollama
-commit_msg=$(git diff | ollama run llama3.1:70b "Create a gitcommit message for this diff:")
+# Copy the staged diff to the clipboard
+git diff --cached | xclip -selection clipboard
 
-# Commit the changes with the generated message
+# Read the clipboard and pass it to the Ollama command
+commit_msg=$(xclip -selection clipboard -o | ollama run llama3.1:70b "Create a gitcommit message for this diff:")
+
+# Commit the changes with the generated commit message
 git commit -m "$commit_msg"
 
