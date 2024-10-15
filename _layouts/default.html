@@ -179,7 +179,8 @@
                         const response = await fetch(paper.link);
                         const text = await response.text();
                         console.log('Fetched text:', text.substring(0, 100) + '...');
-                        this.paperContent = marked.parse(text);
+                        const formattedContent = this.formatContent(text);
+                        this.paperContent = marked.parse(formattedContent);
                         if (this.isMobile) {
                             this.showModal = true;
                         } else {
@@ -189,6 +190,20 @@
                     } catch (error) {
                         console.error('Error fetching paper content:', error);
                     }
+                },
+                formatContent(content) {
+                    const lines = content.split('\n');
+                    let startIndex = lines.findIndex(line => line.startsWith('Publication Date:'));
+                    if (startIndex === -1) startIndex = 0;
+                    
+                    const formattedLines = lines.slice(startIndex + 1).map(line => {
+                        if (['Summary:', 'Key Contributions:', 'Methodology:', 'Datasets:', 'Future Work:', 'Tools Introduced:'].includes(line.trim())) {
+                            return `### ${line.trim()}`;
+                        }
+                        return line;
+                    });
+                    
+                    return formattedLines.join('\n');
                 },
                 closeModal() {
                     this.showModal = false;
