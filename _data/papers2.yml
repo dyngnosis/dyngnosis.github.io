@@ -6,7 +6,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.06987v1
     [Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation]_review.md
@@ -15,7 +15,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Rethinking Jailbreaking through the Lens of Representation Engineering review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.06824v3
     [Rethinking Jailbreaking through the Lens of Representation Engineering]_review.md
@@ -23,7 +23,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Chain-of-Jailbreak Attack for Image Generation Models via Editing Step by
     Step review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.03869v1
@@ -32,7 +32,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: BaThe Defense against the Jailbreak Attack in Multimodal Large Language Models
     by Treating Harmful Instruction as Backdoor Trigger review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.09093v1
@@ -43,7 +43,18 @@
   - AMLT0018/BackdoorMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: BlackDAN A Black-Box Multi-Objective Approach for Effective and Contextual
+    Jailbreaking of Large Language Models review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.09804v2
+    [BlackDAN A Black-Box Multi-Objective Approach for Effective and Contextual Jailbreaking
+    of Large Language Models]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0042/VerifyAttack
+  date: '2024-10-22'
 - title: Intention Analysis Makes LLMs A Good Jailbreak Defender review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.06561v3
     [Intention Analysis Makes LLMs A Good Jailbreak Defender]_review.md
@@ -52,7 +63,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreak Attacks and Defenses Against Large Language Models A Survey review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.04295v2
     [Jailbreak Attacks and Defenses Against Large Language Models A Survey]_review.md
@@ -61,7 +72,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Unveiling the Safety of GPT-4o An Empirical Study using Jailbreak Attacks
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.06302v2
@@ -71,7 +82,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0042/VerifyAttack
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AttnGCG Enhancing Jailbreaking Attacks on LLMs with Attention Manipulation
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.09040v1
@@ -81,7 +92,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AutoDefense Multi-Agent LLM Defense against Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.04783v1
     [AutoDefense Multi-Agent LLM Defense against Jailbreak Attacks]_review.md
@@ -89,7 +100,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Making Them Ask and Answer Jailbreaking Large Language Models in Few Queries
     via Disguise and Reconstruction review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.18104v2
@@ -100,7 +111,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreak Vision Language Models via Bi-Modal Adversarial Prompt review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.04031v2
     [Jailbreak Vision Language Models via Bi-Modal Adversarial Prompt]_review.md
@@ -109,7 +120,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking as a Reward Misspecification Problem review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.14393v2
     [Jailbreaking as a Reward Misspecification Problem]_review.md
@@ -118,7 +129,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Rethinking How to Evaluate Language Model Jailbreak review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.06407v3
     [Rethinking How to Evaluate Language Model Jailbreak]_review.md
@@ -127,7 +138,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0042/VerifyAttack
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking as a Reward Misspecification Problem review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.14393v3
     [Jailbreaking as a Reward Misspecification Problem]_review.md
@@ -135,7 +146,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Can Large Language Models Automatically Jailbreak GPT-4V review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.16686v2
     [Can Large Language Models Automatically Jailbreak GPT-4V]_review.md
@@ -144,7 +155,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AutoBreach Universal and Adaptive Jailbreaking with Efficient Wordplay-Guided
     Optimization review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.19668v1
@@ -155,7 +166,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AutoDAN-Turbo A Lifelong Agent for Strategy Self-Exploration to Jailbreak
     LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.05295v2
@@ -166,7 +177,7 @@
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Improved Techniques for Optimization-Based Jailbreaking on Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.21018v2
@@ -176,7 +187,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Large Language Models Against Moderation Guardrails via Cipher
     Characters review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.20413v1
@@ -186,7 +197,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Endless Jailbreaks with Bijection Learning review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.01294v1
     [Endless Jailbreaks with Bijection Learning]_review.md
@@ -195,7 +206,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Voice Jailbreak Attacks Against GPT-4o review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.19103v1
     [Voice Jailbreak Attacks Against GPT-4o]_review.md
@@ -205,7 +216,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Great, Now Write an Article About That The Crescendo Multi-Turn LLM Jailbreak
     Attack review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.01833v2
@@ -216,7 +227,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: '[WIP review'
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.12702v2
     [[WIP] Jailbreak Paradox The Achilles' Heel of LLMs]_review.md
@@ -224,7 +235,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
   - AMLT0015/EvadeMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Safe Unlearning A Surprisingly Effective and Generalizable Solution to Defend
     Against Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.02855v1
@@ -237,7 +248,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AutoDAN Generating Stealthy Jailbreak Prompts on Aligned Large Language Models
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.04451v2
@@ -247,7 +258,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Merging Improves Self-Critique Against Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.07188v2
     [Merging Improves Self-Critique Against Jailbreak Attacks]_review.md
@@ -256,7 +267,15 @@
   - AMLT0018/BackdoorMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Boosting Jailbreak Transferability for Large Language Models review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.15645v1
+    [Boosting Jailbreak Transferability for Large Language Models]_review.md
+  tags:
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0054/LLMJailbreak
+  date: '2024-10-22'
 - title: Competition Report Finding Universal Jailbreak Backdoors in Aligned LLMs
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.14461v2
@@ -266,7 +285,7 @@
   - AMLT0020/PoisonTrainingData
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: FuzzLLM A Novel and Universal Fuzzing Framework for Proactively Discovering
     Jailbreak Vulnerabilities in Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2309.05274v2
@@ -278,7 +297,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Enhancing Jailbreak Attack Against Large Language Models through Silent Tokens
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.20653v2
@@ -288,7 +307,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Pruning for Protection Increasing Jailbreak Resistance in Aligned LLMs Without
     Fine-Tuning review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.10862v2
@@ -300,7 +319,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: White-box Multimodal Jailbreaks Against Large Vision-Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.17894v1
     [White-box Multimodal Jailbreaks Against Large Vision-Language Models]_review.md
@@ -309,7 +328,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Exploiting Uncommon Text-Encoded Structures for Automated Jailbreaks in LLMs
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.08754v2
@@ -319,7 +338,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Distract Large Language Models for Automatic Jailbreak Attack review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.08424v2
     [Distract Large Language Models for Automatic Jailbreak Attack]_review.md
@@ -329,7 +348,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Open Sesame! Universal Black Box Jailbreaking of Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2309.01446v4
     [Open Sesame! Universal Black Box Jailbreaking of Large Language Models]_review.md
@@ -338,7 +357,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Large Language Models Are Involuntary Truth-Tellers Exploiting Fallacy Failure
     for Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.00869v1
@@ -348,7 +367,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Red teaming ChatGPT via Jailbreaking Bias, Robustness, Reliability and Toxicity
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2301.12867v4
@@ -360,7 +379,7 @@
   - AMLT0042/VerifyAttack
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: COLD-Attack Jailbreaking LLMs with Stealthiness and Controllability review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.08679v2
     [COLD-Attack Jailbreaking LLMs with Stealthiness and Controllability]_review.md
@@ -368,7 +387,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Multimodal Pragmatic Jailbreak on Text-to-image Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.19149v1
     [Multimodal Pragmatic Jailbreak on Text-to-image Models]_review.md
@@ -377,7 +396,7 @@
   - AMLT0016/ObtainCapabilities
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Attack against Multimodal Large Language Model review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.02309v1
     [Jailbreaking Attack against Multimodal Large Language Model]_review.md
@@ -387,7 +406,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: InjecAgent Benchmarking Indirect Prompt Injections in Tool-Integrated Large
     Language Model Agents review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.02691v3
@@ -398,7 +417,7 @@
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0051/LLMPromptInjection
   - AMLT0053/LLMPluginCompromise
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Arondight Red Teaming Large Vision Language Models with Auto-generated Multi-modal
     Jailbreak Prompts review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.15050v1
@@ -408,7 +427,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Poisoned LangChain Jailbreak LLMs by LangChain review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.18122v1
     [Poisoned LangChain Jailbreak LLMs by LangChain]_review.md
@@ -417,7 +436,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Towards Understanding Jailbreak Attacks in LLMs A Representation Space Analysis
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.10794v2
@@ -428,7 +447,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: SmoothLLM Defending Large Language Models Against Jailbreaking Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.03684v4
     [SmoothLLM Defending Large Language Models Against Jailbreaking Attacks]_review.md
@@ -436,7 +455,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Text-to-Image Models with LLM-Based Agents review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.00523v2
     [Jailbreaking Text-to-Image Models with LLM-Based Agents]_review.md
@@ -445,7 +464,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0005/CreateProxyMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Fast Adversarial Attacks on Language Models In One GPU Minute review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.15570v1
     [Fast Adversarial Attacks on Language Models In One GPU Minute]_review.md
@@ -455,7 +474,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0054/LLMJailbreak
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: SafeDecoding Defending against Jailbreak Attacks via Safety-Aware Decoding
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.08983v4
@@ -464,7 +483,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Information-Theoretical Principled Trade-off between Jailbreakability and
     Stealthiness on Vision Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.01438v1
@@ -475,7 +494,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Multilingual Jailbreak Challenges in Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.06474v3
     [Multilingual Jailbreak Challenges in Large Language Models]_review.md
@@ -484,7 +503,7 @@
   - AMLT0057/LLMDataLeakage
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: GPTFUZZER Red Teaming Large Language Models with Auto-Generated Jailbreak
     Prompts review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2309.10253v4
@@ -495,7 +514,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0017/DevelopCapabilities
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AgentDojo A Dynamic Environment to Evaluate Attacks and Defenses for LLM
     Agents review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.13352v2
@@ -505,7 +524,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Image-to-Text Logic Jailbreak Your Imagination can Help You Do Anything review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.02534v1
     [Image-to-Text Logic Jailbreak Your Imagination can Help You Do Anything]_review.md
@@ -514,7 +533,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Are Large Language Models Really Bias-Free Jailbreak Prompts for Assessing
     Adversarial Robustness to Bias Elicitation review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.08441v1
@@ -526,7 +545,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Visual Adversarial Examples Jailbreak Aligned Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2306.13213v2
     [Visual Adversarial Examples Jailbreak Aligned Large Language Models]_review.md
@@ -535,7 +554,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: JailbreakEval An Integrated Toolkit for Evaluating Jailbreak Attempts Against
     Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.09321v1
@@ -546,7 +565,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AmpleGCG Learning a Universal and Transferable Generative Model of Adversarial
     Suffixes for Jailbreaking Both Open and Closed LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.07921v2
@@ -558,7 +577,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0017/DevelopCapabilities
   - AMLT0005/CreateProxyMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Large Language Models with Symbolic Mathematics review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.11445v1
     [Jailbreaking Large Language Models with Symbolic Mathematics]_review.md
@@ -567,7 +586,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Automatic Jailbreaking of the Text-to-Image Generative AI Systems review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.16567v2
     [Automatic Jailbreaking of the Text-to-Image Generative AI Systems]_review.md
@@ -576,7 +595,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Latent Jailbreak A Benchmark for Evaluating Text Safety and Output Robustness
     of Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2307.08487v3
@@ -587,7 +606,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Agent Smith A Single Image Can Jailbreak One Million Multimodal LLM Agents
     Exponentially Fast review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.08567v2
@@ -600,7 +619,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Break the Breakout Reinventing LM Defense Against Jailbreak Attacks with
     Self-Refinement review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.15180v2
@@ -610,7 +629,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Gemma Scope Open Sparse Autoencoders Everywhere All At Once on Gemma 2 review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.05147v2
     [Gemma Scope Open Sparse Autoencoders Everywhere All At Once on Gemma 2]_review.md
@@ -621,7 +640,7 @@
   - AMLT0037/DataFromLocalSystem
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0044/FullMLModelAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Eraser Jailbreaking Defense in Large Language Models via Unlearning Harmful
     Knowledge review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.05880v2
@@ -632,7 +651,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: The Threats of Embodied Multimodal LLMs Jailbreaking Robotic Manipulation
     in the Physical World review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.20242v2
@@ -643,7 +662,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Quantum Computers review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.05941v1
     [Jailbreaking Quantum Computers]_review.md
@@ -653,7 +672,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: A StrongREJECT for Empty Jailbreaks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.10260v2
     [A StrongREJECT for Empty Jailbreaks]_review.md
@@ -661,7 +680,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0054/LLMJailbreak
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: ASETF A Novel Method for Jailbreak Attack on LLMs through Translate Suffix
     Embeddings review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.16006v2
@@ -672,7 +691,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: GradSafe Detecting Jailbreak Prompts for LLMs via Safety-Critical Gradient
     Analysis review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.13494v2
@@ -682,7 +701,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Defensive Prompt Patch A Robust and Interpretable Defense of LLMs against
     Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.20099v1
@@ -692,7 +711,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: All in How You Ask for It Simple Black-Box Method for Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.09798v3
     [All in How You Ask for It Simple Black-Box Method for Jailbreak Attacks]_review.md
@@ -702,7 +721,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: How Johnny Can Persuade LLMs to Jailbreak Them Rethinking Persuasion to Challenge
     AI Safety by Humanizing LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.06373v2
@@ -714,7 +733,7 @@
   - AMLT0057/LLMDataLeakage
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: textit{MMJ-Bench} A Comprehensive Study on Jailbreak Attacks and Defenses
     for Vision Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.08464v1
@@ -725,7 +744,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Investigating Coverage Criteria in Large Language Models An In-Depth Study
     Through Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.15207v1
@@ -736,7 +755,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: LLMs Can Defend Themselves Against Jailbreaking in a Practical Manner A Vision
     Paper review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.15727v2
@@ -747,7 +766,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Pandora Jailbreak GPTs by Retrieval Augmented Generation Poisoning review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.08416v1
     [Pandora Jailbreak GPTs by Retrieval Augmented Generation Poisoning]_review.md
@@ -756,7 +775,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Can LLMs Deeply Detect Complex Malicious Queries A Framework for Jailbreaking
     via Obfuscating Intent review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.03654v2
@@ -767,7 +786,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: RePD Defending Jailbreak Attack through a Retrieval-based Prompt Decomposition
     Process review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.08660v1
@@ -778,7 +797,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: GUARD Role-playing to Generate Natural-language Jailbreakings to Test Guideline
     Adherence of Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.03299v4
@@ -790,7 +809,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: The Dark Side of Function Calling Pathways to Jailbreaking Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.17915v1
@@ -800,7 +819,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Prefix Guidance A Steering Wheel for Large Language Models to Defend Against
     Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.08924v2
@@ -811,7 +830,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Efficient LLM Jailbreak via Adaptive Dense-to-sparse Constrained Optimization
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.09113v1
@@ -820,7 +839,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Understanding Jailbreak Success A Study of Latent Space Dynamics in Large
     Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.09289v1
@@ -831,7 +850,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Play Guessing Game with LLM Indirect Jailbreak Attack with Implicit Clues
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.09091v2
@@ -841,7 +860,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: SelfDefend LLMs Can Defend Themselves against Jailbreaking in a Practical
     Manner review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.05498v1
@@ -851,7 +870,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: WildGuard Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and
     Refusals of LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.18495v2
@@ -865,7 +884,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Cross-Modality Jailbreak and Mismatched Attacks on Medical Multimodal Large
     Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.20775v1
@@ -876,7 +895,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: States as Strings as Strategies Steering Language Models with Game-Theoretic
     Solvers review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.01704v2
@@ -889,7 +908,7 @@
   - AMLT0017/DevelopCapabilities
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Harnessing Task Overload for Scalable Jailbreak Attacks on Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.04190v1
@@ -899,7 +918,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: You Know What I'm Saying Jailbreak Attack via Implicit Reference review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.03857v2
     [You Know What I'm Saying Jailbreak Attack via Implicit Reference]_review.md
@@ -908,7 +927,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0015/EvadeMLModel
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Not Aligned is Not Malicious Being Careful about Hallucinations of Large
     Language Models' Jailbreak review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.11668v1
@@ -918,7 +937,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Foot In The Door Understanding Large Language Model Jailbreaking via Cognitive
     Psychology review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.15690v1
@@ -929,7 +948,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Large Language Models Are Involuntary Truth-Tellers Exploiting Fallacy Failure
     for Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.00869v2
@@ -940,7 +959,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: WordGame Efficient & Effective LLM Jailbreak via Simultaneous Obfuscation
     in Query and Response review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.14023v1
@@ -951,7 +970,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Defending Jailbreak Attack in VLMs via Cross-modality Information Detector
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.21659v2
@@ -960,7 +979,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: SelfDefend LLMs Can Defend Themselves against Jailbreaking in a Practical
     Manner review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.05498v2
@@ -970,7 +989,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: LLM Defenses Are Not Robust to Multi-Turn Human Jailbreaks Yet review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.15221v2
     [LLM Defenses Are Not Robust to Multi-Turn Human Jailbreaks Yet]_review.md
@@ -980,7 +999,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Unlocking Adversarial Suffix Optimization Without Affirmative Phrases Efficient
     Black-box Jailbreaking via LLM as Optimizer review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.11313v1
@@ -991,7 +1010,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: GPT-4 Jailbreaks Itself with Near-Perfect Success Using Self-Explanation
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.13077v1
@@ -1001,7 +1020,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety
     Alignment review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.14968v3
@@ -1011,7 +1030,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0020/PoisonTrainingData
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AttackEval How to Evaluate the Effectiveness of Jailbreak Attacking on Large
     Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.09002v5
@@ -1022,7 +1041,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: JailbreakHunter A Visual Analytics Approach for Jailbreak Prompts Discovery
     from Large-Scale Human-LLM Conversational Datasets review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.03045v1
@@ -1032,7 +1051,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0054/LLMJailbreak
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: MasterKey Automated Jailbreak Across Multiple Large Language Model Chatbots
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2307.08715v2
@@ -1043,7 +1062,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreak in pieces Compositional Adversarial Attacks on Multi-Modal Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2307.14539v2
@@ -1053,7 +1072,16 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: A Realistic Threat Model for Large Language Model Jailbreaks review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.16222v1
+    [A Realistic Threat Model for Large Language Model Jailbreaks]_review.md
+  tags:
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0054/LLMJailbreak
+  - AMLT0051/LLMPromptInjection
+  date: '2024-10-22'
 - title: JailbreakZoo Survey, Landscapes, and Horizons in Jailbreaking Large Language
     and Vision-Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.01599v2
@@ -1065,7 +1093,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: From LLMs to MLLMs Exploring the Landscape of Multimodal Jailbreaking review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.14859v1
     [From LLMs to MLLMs Exploring the Landscape of Multimodal Jailbreaking]_review.md
@@ -1074,7 +1102,17 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Jigsaw Puzzles Splitting Harmful Questions to Jailbreak Large Language Models
+    review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.11459v1
+    [Jigsaw Puzzles Splitting Harmful Questions to Jailbreak Large Language Models]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0051/LLMPromptInjection
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  date: '2024-10-22'
 - title: EEG-Defender Defending against Jailbreak through Early Exit Generation of
     Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.11308v1
@@ -1085,7 +1123,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Weak-to-Strong Jailbreaking on Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.17256v2
     [Weak-to-Strong Jailbreaking on Large Language Models]_review.md
@@ -1094,7 +1132,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: How Alignment and Jailbreak Work Explain LLM Safety through Intermediate
     Hidden States review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.05644v2
@@ -1106,7 +1144,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Emerging Vulnerabilities in Frontier Models Multi-Turn Jailbreak Attacks
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.00137v1
@@ -1116,7 +1154,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: ObscurePrompt Jailbreaking Large Language Models via Obscure Input review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.13662v1
     [ObscurePrompt Jailbreaking Large Language Models via Obscure Input]_review.md
@@ -1125,7 +1163,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Universal Jailbreak Backdoors from Poisoned Human Feedback review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.14455v4
     [Universal Jailbreak Backdoors from Poisoned Human Feedback]_review.md
@@ -1134,7 +1172,7 @@
   - AMLT0020/PoisonTrainingData
   - AMLT0015/EvadeMLModel
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Improved Few-Shot Jailbreaking Can Circumvent Aligned Language Models and
     Their Defenses review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.01288v1
@@ -1144,7 +1182,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Leveraging the Context through Multi-Round Interactions for Jailbreaking
     Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.09177v1
@@ -1155,7 +1193,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Characterizing and Evaluating the Reliability of LLMs against Jailbreak Attacks
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.09326v1
@@ -1165,7 +1203,17 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: GPT-4 Jailbreaks Itself with Near-Perfect Success Using Self-Explanation
+    review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.13077v2
+    [GPT-4 Jailbreaks Itself with Near-Perfect Success Using Self-Explanation]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0051/LLMPromptInjection
+  date: '2024-10-22'
 - title: Hide Your Malicious Goal Into Benign Narratives Jailbreak Large Language
     Models through Neural Carrier Articles review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.11182v1
@@ -1177,7 +1225,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0015/EvadeMLModel
   - AMLT0005/CreateProxyMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: When Do Universal Image Jailbreaks Transfer Between Vision-Language Models
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.15211v1
@@ -1187,7 +1235,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Securing Vision-Language Models with a Robust Encoder Against Jailbreak and
     Adversarial Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.07353v1
@@ -1198,7 +1246,18 @@
   - AMLT0018/BackdoorMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Do LLMs Have Political Correctness Analyzing Ethical Biases and Jailbreak
+    Vulnerabilities in AI Systems review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.13334v1
+    [Do LLMs Have Political Correctness Analyzing Ethical Biases and Jailbreak Vulnerabilities
+    in AI Systems]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0051/LLMPromptInjection
+  date: '2024-10-22'
 - title: Perception-guided Jailbreak against Text-to-Image Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.10848v1
     [Perception-guided Jailbreak against Text-to-Image Models]_review.md
@@ -1207,7 +1266,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreak and Guard Aligned Language Models with Only Few In-Context Demonstrations
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.06387v3
@@ -1217,7 +1276,18 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: $textit{MMJ-Bench}$ A Comprehensive Study on Jailbreak Attacks and Defenses
+    for Vision Language Models review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.08464v3
+    [$textit{MMJ-Bench}$ A Comprehensive Study on Jailbreak Attacks and Defenses for
+    Vision Language Models]_review.md
+  tags:
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0054/LLMJailbreak
+  - AMLT0031/ErodeMLModelIntegrity
+  date: '2024-10-22'
 - title: FlipAttack Jailbreak LLMs via Flipping review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.02832v1
     [FlipAttack Jailbreak LLMs via Flipping]_review.md
@@ -1226,7 +1296,17 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: When LLM Meets DRL Advancing Jailbreaking Efficiency via DRL-guided Search
+    review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.08705v2
+    [When LLM Meets DRL Advancing Jailbreaking Efficiency via DRL-guided Search]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0005/CreateProxyMLModel
+  date: '2024-10-22'
 - title: Comprehensive Assessment of Jailbreak Attacks Against LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.05668v1
     [Comprehensive Assessment of Jailbreak Attacks Against LLMs]_review.md
@@ -1235,7 +1315,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Testing the Limits of Jailbreaking Defenses with the Purple Problem review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.14725v2
     [Testing the Limits of Jailbreaking Defenses with the Purple Problem]_review.md
@@ -1244,7 +1324,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Don't Say No Jailbreaking LLM by Suppressing Refusal review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.16369v1
     [Don't Say No Jailbreaking LLM by Suppressing Refusal]_review.md
@@ -1253,7 +1333,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Gradient-based Jailbreak Images for Multimodal Fusion Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.03489v1
     [Gradient-based Jailbreak Images for Multimodal Fusion Models]_review.md
@@ -1262,7 +1342,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: MM-SafetyBench A Benchmark for Safety Evaluation of Multimodal Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.17600v5
@@ -1273,7 +1353,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Human-Interpretable Adversarial Prompt Attack on Large Language Models with
     Situational Context review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.14644v2
@@ -1284,7 +1364,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: The Butterfly Effect of Altering Prompts How Small Changes and Jailbreaks
     Affect Large Language Model Performance review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.03729v3
@@ -1295,7 +1375,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Do Anything Now Characterizing and Evaluating In-The-Wild Jailbreak Prompts
     on Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2308.03825v2
@@ -1307,7 +1387,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0057/LLMDataLeakage
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Tree of Attacks Jailbreaking Black-Box LLMs Automatically review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2312.02119v2
     [Tree of Attacks Jailbreaking Black-Box LLMs Automatically]_review.md
@@ -1316,7 +1396,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: PARDEN, Can You Repeat That Defending against Jailbreaks via Repetition review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.07932v2
     [PARDEN, Can You Repeat That Defending against Jailbreaks via Repetition]_review.md
@@ -1324,7 +1404,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking ChatGPT via Prompt Engineering An Empirical Study review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2305.13860v2
     [Jailbreaking ChatGPT via Prompt Engineering An Empirical Study]_review.md
@@ -1334,7 +1414,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: DeCE Deceptive Cross-Entropy Loss Designed for Defending Backdoor Attacks
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.08956v1
@@ -1344,7 +1424,7 @@
   - AMLT0020/PoisonTrainingData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: JailbreakLens Visual Analysis of Jailbreak Attacks Against Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.08793v1
@@ -1355,7 +1435,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Leveraging the Context through Multi-Round Interactions for Jailbreaking
     Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.09177v2
@@ -1365,7 +1445,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Tastle Distract Large Language Models for Automatic Jailbreak Attack review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.08424v1
     [Tastle Distract Large Language Models for Automatic Jailbreak Attack]_review.md
@@ -1374,7 +1454,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: LLM Defenses Are Not Robust to Multi-Turn Human Jailbreaks Yet review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.15221v1
     [LLM Defenses Are Not Robust to Multi-Turn Human Jailbreaks Yet]_review.md
@@ -1384,7 +1464,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: SafeAligner Safety Alignment against Jailbreak Attacks via Response Disparity
     Guidance review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.18118v2
@@ -1395,7 +1475,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Fight Back Against Jailbreaking via Prompt Adversarial Tuning review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.06255v3
     [Fight Back Against Jailbreaking via Prompt Adversarial Tuning]_review.md
@@ -1403,7 +1483,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: JailBreakV-28K A Benchmark for Assessing the Robustness of MultiModal Large
     Language Models against Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.03027v3
@@ -1414,7 +1494,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Virtual Context Enhancing Jailbreak Attacks with Special Token Injection
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.19845v2
@@ -1424,7 +1504,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: RT-Attack Jailbreaking Text-to-Image Models via Random Token review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.13896v2
     [RT-Attack Jailbreaking Text-to-Image Models via Random Token]_review.md
@@ -1433,7 +1513,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: The Dark Side of Function Calling Pathways to Jailbreaking Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.17915v2
@@ -1443,7 +1523,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking LLMs with Arabic Transliteration and Arabizi review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.18725v2
     [Jailbreaking LLMs with Arabic Transliteration and Arabizi]_review.md
@@ -1452,7 +1532,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: STAR SocioTechnical Approach to Red Teaming Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.11757v3
     [STAR SocioTechnical Approach to Red Teaming Language Models]_review.md
@@ -1461,7 +1541,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Tricking LLMs into Disobedience Formalizing, Analyzing, and Detecting Jailbreaks
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2305.14965v4
@@ -1473,7 +1553,7 @@
   - AMLT0057/LLMDataLeakage
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: CodeChameleon Personalized Encryption Framework for Jailbreaking Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.16717v1
@@ -1484,7 +1564,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Can Large Language Models Automatically Jailbreak GPT-4V review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.16686v1
     [Can Large Language Models Automatically Jailbreak GPT-4V]_review.md
@@ -1493,7 +1573,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: ArtPrompt ASCII Art-based Jailbreak Attacks against Aligned LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.11753v4
     [ArtPrompt ASCII Art-based Jailbreak Attacks against Aligned LLMs]_review.md
@@ -1502,7 +1582,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Semantic Mirror Jailbreak Genetic Algorithm Based Jailbreak Prompts Against
     Open-source LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.14872v2
@@ -1513,7 +1593,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: When LLM Meets DRL Advancing Jailbreaking Efficiency via DRL-guided Search
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.08705v1
@@ -1523,7 +1603,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Accelerating Greedy Coordinate Gradient via Probe Sampling review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.01251v2
     [Accelerating Greedy Coordinate Gradient via Probe Sampling]_review.md
@@ -1532,7 +1612,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Defending LLMs against Jailbreaking Attacks via Backtranslation review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.16459v3
     [Defending LLMs against Jailbreaking Attacks via Backtranslation]_review.md
@@ -1540,7 +1620,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Figure it Out Analyzing-based Jailbreak Attack on Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.16205v3
     [Figure it Out Analyzing-based Jailbreak Attack on Large Language Models]_review.md
@@ -1549,7 +1629,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: A Comprehensive Study of Jailbreak Attack versus Defense for Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.13457v2
@@ -1560,7 +1640,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0042/VerifyAttack
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Defending Large Language Models Against Jailbreak Attacks via Layer-specific
     Editing review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.18166v2
@@ -1570,7 +1650,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Why Are My Prompts Leaked Unraveling Prompt Extraction Threats in Customized
     Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.02416v1
@@ -1582,7 +1662,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: MoJE Mixture of Jailbreak Experts, Naive Tabular Classifiers as Guard for
     Prompt Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.17699v3
@@ -1593,7 +1673,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: SoP Unlock the Power of Social Facilitation for Automatic Jailbreak Attack
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.01902v1
@@ -1604,7 +1684,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Gradient Cuff Detecting Jailbreak Attacks on Large Language Models by Exploring
     Refusal Loss Landscapes review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.00867v2
@@ -1615,7 +1695,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Perception-guided Jailbreak against Text-to-Image Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.10848v2
     [Perception-guided Jailbreak against Text-to-Image Models]_review.md
@@ -1623,7 +1703,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: DrAttack Prompt Decomposition and Reconstruction Makes Powerful LLM Jailbreakers
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.16914v2
@@ -1633,7 +1713,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.02151v2
     [Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks]_review.md
@@ -1642,7 +1722,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Refusal in Language Models Is Mediated by a Single Direction review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.11717v2
     [Refusal in Language Models Is Mediated by a Single Direction]_review.md
@@ -1651,7 +1731,7 @@
   - AMLT0044/FullMLModelAccess
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AVIBench Towards Evaluating the Robustness of Large Vision-Language Model
     on Adversarial Visual-Instructions review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.09346v1
@@ -1663,7 +1743,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0029/DenialOfMLService
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Images are Achilles' Heel of Alignment Exploiting Visual Vulnerabilities
     for Jailbreaking Multimodal Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.09792v2
@@ -1674,7 +1754,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreak Attacks and Defenses Against Large Language Models A Survey review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.04295v1
     [Jailbreak Attacks and Defenses Against Large Language Models A Survey]_review.md
@@ -1684,7 +1764,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: A StrongREJECT for Empty Jailbreaks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.10260v1
     [A StrongREJECT for Empty Jailbreaks]_review.md
@@ -1692,7 +1772,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0015/EvadeMLModel
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Defending Large Language Models Against Jailbreaking Attacks Through Goal
     Prioritization review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.09096v2
@@ -1701,7 +1781,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0015/EvadeMLModel
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Enhancing Jailbreak Attacks with Diversity Guidance review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.00292v2
     [Enhancing Jailbreak Attacks with Diversity Guidance]_review.md
@@ -1710,7 +1790,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: RL-JACK Reinforcement Learning-powered Black-box Jailbreaking Attack against
     LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.08725v1
@@ -1721,7 +1801,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0005/CreateProxyMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: RoleBreak Character Hallucination as a Jailbreak Attack in Role-Playing Systems
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.16727v1
@@ -1731,7 +1811,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0020/PoisonTrainingData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Low-Resource Languages Jailbreak GPT-4 review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.02446v2
     [Low-Resource Languages Jailbreak GPT-4]_review.md
@@ -1740,7 +1820,16 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Deciphering the Chaos Enhancing Jailbreak Attacks via Adversarial Prompt
+    Translation review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.11317v1
+    [Deciphering the Chaos Enhancing Jailbreak Attacks via Adversarial Prompt Translation]_review.md
+  tags:
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0054/LLMJailbreak
+  date: '2024-10-22'
 - title: Hacc-Man An Arcade Game for Jailbreaking LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.15902v1
     [Hacc-Man An Arcade Game for Jailbreaking LLMs]_review.md
@@ -1749,7 +1838,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: A Cross-Language Investigation into Jailbreak Attacks in Large Language Models
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.16765v1
@@ -1759,7 +1848,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Bag of Tricks Benchmarking of Jailbreak Attacks on LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.09324v1
     [Bag of Tricks Benchmarking of Jailbreak Attacks on LLMs]_review.md
@@ -1767,7 +1856,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: ALERT A Comprehensive Benchmark for Assessing Large Language Models' Safety
     through Red Teaming review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.08676v3
@@ -1779,7 +1868,7 @@
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Fluent Student-Teacher Redteaming review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.17447v1
     [Fluent Student-Teacher Redteaming]_review.md
@@ -1789,7 +1878,7 @@
   - AMLT0017/DevelopCapabilities
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreak Antidote Runtime Safety-Utility Balance via Sparse Representation
     Adjustment in Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.02298v2
@@ -1800,7 +1889,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: The Dark Side of Function Calling Pathways to Jailbreaking Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.17915v3
@@ -1810,7 +1899,27 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Jailbreaking LLM-Controlled Robots review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.13691v1
+    [Jailbreaking LLM-Controlled Robots]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0051/LLMPromptInjection
+  date: '2024-10-22'
+- title: JAILJUDGE A Comprehensive Jailbreak Judge Benchmark with Multi-Agent Enhanced
+    Explanation Evaluation Framework review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.12855v2
+    [JAILJUDGE A Comprehensive Jailbreak Judge Benchmark with Multi-Agent Enhanced
+    Explanation Evaluation Framework]_review.md
+  tags:
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0054/LLMJailbreak
+  - AMLT0042/VerifyAttack
+  date: '2024-10-22'
 - title: Universal and Transferable Adversarial Attacks on Aligned Language Models
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2307.15043v2
@@ -1821,7 +1930,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreak Instruction-Tuned LLMs via end-of-sentence MLP Re-weighting review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.10150v1
     [Jailbreak Instruction-Tuned LLMs via end-of-sentence MLP Re-weighting]_review.md
@@ -1830,7 +1939,17 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: SMILES-Prompting A Novel Approach to LLM Jailbreak Attacks in Chemical Synthesis
+    review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.15641v1
+    [SMILES-Prompting A Novel Approach to LLM Jailbreak Attacks in Chemical Synthesis]_review.md
+  tags:
+  - AMLT0051/LLMPromptInjection
+  - AMLT0054/LLMJailbreak
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  date: '2024-10-22'
 - title: h4rm3l A Dynamic Benchmark of Composable Jailbreak Attacks for LLM Safety
     Assessment review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.04811v1
@@ -1841,7 +1960,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Unleashing Worms and Extracting Data Escalating the Outcome of Attacks against
     RAG-based Inference in Scale and Severity Using Jailbreaking review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.08045v1
@@ -1854,7 +1973,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0020/PoisonTrainingData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Image-to-Text Logic Jailbreak Your Imagination can Help You Do Anything review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.02534v2
     [Image-to-Text Logic Jailbreak Your Imagination can Help You Do Anything]_review.md
@@ -1863,7 +1982,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Is the System Message Really Important to Jailbreaks in Large Language Models
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.14857v2
@@ -1873,7 +1992,17 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: A Troublemaker with Contagious Jailbreak Makes Chaos in Honest Towns review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.16155v1
+    [A Troublemaker with Contagious Jailbreak Makes Chaos in Honest Towns]_review.md
+  tags:
+  - AMLT0015/EvadeMLModel
+  - AMLT0018/BackdoorMLModel
+  - AMLT0020/PoisonTrainingData
+  - AMLT0031/ErodeMLModelIntegrity
+  - AMLT0043/CraftAdversarialData
+  date: '2024-10-22'
 - title: EasyJailbreak A Unified Framework for Jailbreaking Large Language Models
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.12171v1
@@ -1884,7 +2013,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Learning To See But Forgetting To Follow Visual Instruction Tuning Makes
     LLMs More Prone To Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.04403v1
@@ -1895,7 +2024,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Prompt Attack A Controllable Adversarial Attack against Diffusion
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.02928v2
@@ -1906,7 +2035,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Rapid Optimization for Jailbreaking LLMs via Subconscious Exploitation and
     Echopraxia review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.05467v1
@@ -1917,7 +2046,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Multi-Turn Context Jailbreak Attack on Large Language Models From First Principles
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.04686v1
@@ -1927,7 +2056,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: SneakyPrompt Jailbreaking Text-to-image Generative Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2305.12082v3
     [SneakyPrompt Jailbreaking Text-to-image Generative Models]_review.md
@@ -1937,7 +2066,7 @@
   - AMLT0017/DevelopCapabilities
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: A Wolf in Sheep's Clothing Generalized Nested Jailbreak Prompts can Fool
     Large Language Models Easily review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.08268v4
@@ -1948,7 +2077,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
   - AMLT0015/EvadeMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: JailbreakBench An Open Robustness Benchmark for Jailbreaking Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.01318v4
@@ -1959,7 +2088,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Soft Begging Modular and Efficient Shielding of LLMs against Prompt Injection
     and Jailbreaking based on Prompt Tuning review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.03391v1
@@ -1970,7 +2099,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Boosting Jailbreak Attack with Momentum review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.01229v1
     [Boosting Jailbreak Attack with Momentum]_review.md
@@ -1978,7 +2107,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Robust Prompt Optimization for Defending Language Models Against Jailbreaking
     Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2401.17263v4
@@ -1989,7 +2118,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: WildTeaming at Scale From In-the-Wild Jailbreaks to (Adversarially) Safer
     Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.18510v1
@@ -2000,7 +2129,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0020/PoisonTrainingData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Aurora-M The First Open Source Multilingual Language Model Red-teamed according
     to the U.S. Executive Order review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.00399v2
@@ -2011,7 +2140,7 @@
   - AMLT0020/PoisonTrainingData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Don't Listen To Me Understanding and Exploring Jailbreak Prompts of Large
     Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.17336v1
@@ -2022,7 +2151,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Scalable and Transferable Black-Box Jailbreaks for Language Models via Persona
     Modulation review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.03348v2
@@ -2034,7 +2163,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Red Teaming GPT-4V Are GPT-4V Safe Against UniMulti-Modal Jailbreak Attacks
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.03411v1
@@ -2044,7 +2173,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0057/LLMDataLeakage
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: $textit{MMJ-Bench}$ A Comprehensive Study on Jailbreak Attacks and Defenses
     for Vision Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.08464v2
@@ -2055,7 +2184,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Defending Large Language Models against Jailbreak Attacks via Semantic Smoothing
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.16192v2
@@ -2064,7 +2193,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking GPT-4V via Self-Adversarial Attacks with System Prompts review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.09127v2
     [Jailbreaking GPT-4V via Self-Adversarial Attacks with System Prompts]_review.md
@@ -2074,7 +2203,19 @@
   - AMLT0056/LLMMetaPromptExtraction
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Faster-GCG Efficient Discrete Optimization Jailbreak Attacks against Aligned
+    Large Language Models review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.15362v1
+    [Faster-GCG Efficient Discrete Optimization Jailbreak Attacks against Aligned
+    Large Language Models]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0016/ObtainCapabilities
+  - AMLT0017/DevelopCapabilities
+  date: '2024-10-22'
 - title: Multi-step Jailbreaking Privacy Attacks on ChatGPT review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2304.05197v3
     [Multi-step Jailbreaking Privacy Attacks on ChatGPT]_review.md
@@ -2084,7 +2225,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: DeCE Deceptive Cross-Entropy Loss Designed for Defending Backdoor Attacks
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.08956v2
@@ -2093,7 +2234,18 @@
   - AMLT0018/BackdoorMLModel
   - AMLT0020/PoisonTrainingData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Cross-modality Information Check for Detecting Jailbreaking in Multimodal
+    Large Language Models review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.21659v4
+    [Cross-modality Information Check for Detecting Jailbreaking in Multimodal Large
+    Language Models]_review.md
+  tags:
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0031/ErodeMLModelIntegrity
+  - AMLT0054/LLMJailbreak
+  date: '2024-10-22'
 - title: Hidden You Malicious Goal Into Benign Narratives Jailbreak Large Language
     Models through Logic Chain Injection review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.04849v2
@@ -2104,7 +2256,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
   - AMLT0015/EvadeMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AdaPPA Adaptive Position Pre-Fill Jailbreak Attack Approach Targeting LLMs
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.07503v1
@@ -2114,7 +2266,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Functional Homotopy Smoothing Discrete Optimization via Continuous Parameters
     for LLM Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.04234v1
@@ -2124,7 +2276,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Proprietary Large Language Models using Word Substitution Cipher
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.10601v1
@@ -2134,7 +2286,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Breaking Agents Compromising Autonomous LLM Agents Through Malfunction Amplification
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.20859v1
@@ -2145,7 +2297,7 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0029/DenialOfMLService
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: RED QUEEN Safeguarding Large Language Models against Concealed Multi-Turn
     Jailbreaking review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.17458v1
@@ -2155,7 +2307,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: EnJa Ensemble Jailbreak on Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.03603v1
     [EnJa Ensemble Jailbreak on Large Language Models]_review.md
@@ -2164,7 +2316,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Cognitive Overload Jailbreaking Large Language Models with Overloaded Logical
     Thinking review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.09827v2
@@ -2175,7 +2327,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Continuous Embedding Attacks via Clipped Inputs in Jailbreaking Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.13796v1
@@ -2186,7 +2338,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Don't Say No Jailbreaking LLM by Suppressing Refusal review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.16369v2
     [Don't Say No Jailbreaking LLM by Suppressing Refusal]_review.md
@@ -2195,7 +2347,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Understanding Jailbreak Success A Study of Latent Space Dynamics in Large
     Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.09289v2
@@ -2206,7 +2358,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Medical MLLM is Vulnerable Cross-Modality Jailbreak and Mismatched Attacks
     on Medical Multimodal Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.20775v2
@@ -2217,7 +2369,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Defending Jailbreak Prompts via In-Context Adversarial Game review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.13148v2
     [Defending Jailbreak Prompts via In-Context Adversarial Game]_review.md
@@ -2226,7 +2378,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Prompt Attack A Controllable Adversarial Attack against Diffusion
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.02928v3
@@ -2237,7 +2389,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0016/ObtainCapabilities
   - AMLT0017/DevelopCapabilities
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Text-to-Image Models with LLM-Based Agents review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.00523v1
     [Jailbreaking Text-to-Image Models with LLM-Based Agents]_review.md
@@ -2246,7 +2398,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0005/CreateProxyMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaker in Jail Moving Target Defense for Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.02417v1
     [Jailbreaker in Jail Moving Target Defense for Large Language Models]_review.md
@@ -2255,7 +2407,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0029/DenialOfMLService
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Bag of Tricks Benchmarking of Jailbreak Attacks on LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.09324v2
     [Bag of Tricks Benchmarking of Jailbreak Attacks on LLMs]_review.md
@@ -2264,7 +2416,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Prefix Guidance A Steering Wheel for Large Language Models to Defend Against
     Jailbreak Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.08924v1
@@ -2275,7 +2427,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Lockpicking LLMs A Logit-Based Jailbreak Using Token-level Manipulation review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.13068v2
     [Lockpicking LLMs A Logit-Based Jailbreak Using Token-level Manipulation]_review.md
@@ -2284,7 +2436,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: White-box Multimodal Jailbreaks Against Large Vision-Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.17894v2
     [White-box Multimodal Jailbreaks Against Large Vision-Language Models]_review.md
@@ -2293,7 +2445,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking LLMs with Arabic Transliteration and Arabizi review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.18725v1
     [Jailbreaking LLMs with Arabic Transliteration and Arabizi]_review.md
@@ -2302,7 +2454,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0057/LLMDataLeakage
   - AMLT0015/EvadeMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Fight Back Against Jailbreaking via Prompt Adversarial Tuning review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.06255v2
     [Fight Back Against Jailbreaking via Prompt Adversarial Tuning]_review.md
@@ -2311,7 +2463,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: BlackDAN A Black-Box Multi-Objective Approach for Effective and Contextual
     Jailbreaking of Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.09804v1
@@ -2321,7 +2473,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: AutoJailbreak Exploring Jailbreak Attacks and Defenses through a Dependency
     Lens review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2406.03805v1
@@ -2332,7 +2484,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Black Box Large Language Models in Twenty Queries review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2310.08419v4
     [Jailbreaking Black Box Large Language Models in Twenty Queries]_review.md
@@ -2342,7 +2494,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: ImgTrojan Jailbreaking Vision-Language Models with ONE Image review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.02910v2
     [ImgTrojan Jailbreaking Vision-Language Models with ONE Image]_review.md
@@ -2351,7 +2503,7 @@
   - AMLT0020/PoisonTrainingData
   - AMLT0015/EvadeMLModel
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: h4rm3l A Dynamic Benchmark of Composable Jailbreak Attacks for LLM Safety
     Assessment review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.04811v2
@@ -2362,7 +2514,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0017/DevelopCapabilities
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Efficient LLM-Jailbreaking by Introducing Visual Modality review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2405.20015v1
     [Efficient LLM-Jailbreaking by Introducing Visual Modality]_review.md
@@ -2371,7 +2523,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0005/CreateProxyMLModel
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Cross-modality Information Check for Detecting Jailbreaking in Multimodal
     Large Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.21659v3
@@ -2382,7 +2534,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Mission Impossible A Statistical Perspective on Jailbreaking LLMs review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.01420v1
     [Mission Impossible A Statistical Perspective on Jailbreaking LLMs]_review.md
@@ -2391,7 +2543,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0031/ErodeMLModelIntegrity
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Subtoxic Questions Dive Into Attitude Change of LLM's Response in Jailbreak
     Attempts review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.08309v1
@@ -2401,7 +2553,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: FigStep Jailbreaking Large Vision-language Models via Typographic Visual
     Prompts review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.05608v2
@@ -2411,7 +2563,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Don't Listen To Me Understanding and Exploring Jailbreak Prompts of Large
     Language Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2403.17336v2
@@ -2422,7 +2574,7 @@
   - AMLT0051/LLMPromptInjection
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2404.02151v3
     [Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks]_review.md
@@ -2432,7 +2584,7 @@
   - AMLT0054/LLMJailbreak
   - AMLT0051/LLMPromptInjection
   - AMLT0040/MLModelInferenceAPIAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: PathSeeker Exploring LLM Security Vulnerabilities with a Reinforcement Learning-Based
     Jailbreak Approach review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.14177v2
@@ -2444,7 +2596,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Round Trip Translation Defence against Large Language Model Jailbreaking
     Attacks review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2402.13517v1
@@ -2453,7 +2605,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: DeepInception Hypnotize Large Language Model to Be Jailbreaker review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2311.03191v4
     [DeepInception Hypnotize Large Language Model to Be Jailbreaker]_review.md
@@ -2462,7 +2614,7 @@
   - AMLT0015/EvadeMLModel
   - AMLT0051/LLMPromptInjection
   - AMLT0043/CraftAdversarialData
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Badllama 3 removing safety finetuning from Llama 3 in minutes review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2407.01376v1
     [Badllama 3 removing safety finetuning from Llama 3 in minutes]_review.md
@@ -2472,7 +2624,17 @@
   - AMLT0031/ErodeMLModelIntegrity
   - AMLT0043/CraftAdversarialData
   - AMLT0044/FullMLModelAccess
-  date: '2024-10-15'
+  date: '2024-10-22'
+- title: Jailbreaking and Mitigation of Vulnerabilities in Large Language Models review
+  link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2410.15236v1
+    [Jailbreaking and Mitigation of Vulnerabilities in Large Language Models]_review.md
+  tags:
+  - AMLT0054/LLMJailbreak
+  - AMLT0051/LLMPromptInjection
+  - AMLT0015/EvadeMLModel
+  - AMLT0043/CraftAdversarialData
+  - AMLT0031/ErodeMLModelIntegrity
+  date: '2024-10-22'
 - title: Effective and Evasive Fuzz Testing-Driven Jailbreaking Attacks against LLMs
     review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2409.14866v2
@@ -2483,7 +2645,7 @@
   - AMLT0043/CraftAdversarialData
   - AMLT0040/MLModelInferenceAPIAccess
   - AMLT0042/VerifyAttack
-  date: '2024-10-15'
+  date: '2024-10-22'
 - title: Compromesso! Italian Many-Shot Jailbreaks Undermine the Safety of Large Language
     Models review
   link: https://raw.githubusercontent.com/dyngnosis/dyngnosis.github.io/main/ml/red-team/2408.04522v1
@@ -2493,4 +2655,4 @@
   - AMLT0015/EvadeMLModel
   - AMLT0043/CraftAdversarialData
   - AMLT0054/LLMJailbreak
-  date: '2024-10-15'
+  date: '2024-10-22'
